@@ -51,8 +51,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/mashburn_method_light.svg",
+    "dark": "/logo/mashburn_method_light.svg"
   },
   "navbar": {
     "links": [
