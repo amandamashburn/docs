@@ -16,8 +16,7 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "development"
+              "index"
             ]
           }
         ]
