@@ -28,6 +28,14 @@
             "pages": [
               "index"
             ]
+          },
+          {
+            "group": "Use Cases",
+            "pages": [
+              "use-cases/daily-planner-and-log",
+              "use-cases/knowledge-bank",
+              "use-cases/life-log"
+            ]
           }
         ]
       }
