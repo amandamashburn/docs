@@ -20,8 +20,13 @@ This file provides guidance to Claude Code when working with this repository.
 - Commit frequently throughout development
 - NEVER skip or disable pre-commit hooks
 
+## Font standards
+- Font family: IBM Plex Serif (Google Fonts)
+- Body text: Light 300 weight
+- Headings: SemiBold 600 weight
+- Do not change font configuration without approval
+
 ## Do not
 - Skip frontmatter on any MDX file
 - Use absolute URLs for internal links
-- Include untested code examples
 - Make assumptions - always ask for clarification

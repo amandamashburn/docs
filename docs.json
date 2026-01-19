@@ -1,11 +1,21 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "The Mashburn Method",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#333333",
+    "light": "#333333",
+    "dark": "#CCCCCC"
+  },
+  "fonts": {
+    "heading": {
+      "family": "IBM Plex Serif",
+      "weight": 600
+    },
+    "body": {
+      "family": "IBM Plex Serif",
+      "weight": 300
+    }
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -25,14 +35,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Amanda Mashburn",
+          "href": "https://www.amandamashburn.com",
+          "icon": "globe"
         }
       ]
     }
