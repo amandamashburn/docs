@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "The Mashburn Method",
+  "name": "Mashburn Method",
   "colors": {
     "primary": "#333333",
     "light": "#333333",
@@ -10,31 +10,64 @@
   "fonts": {
     "heading": {
       "family": "IBM Plex Serif",
-      "weight": 600
+      "weight": 200
     },
     "body": {
       "family": "IBM Plex Serif",
-      "weight": 300
+      "weight": 400
     }
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Extended Mind System",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Overview",
             "pages": [
-              "index"
+              "index-extended-mind-system"
             ]
           },
           {
-            "group": "Use Cases",
+            "group": "Collections",
             "pages": [
               "use-cases/daily-planner-and-log",
               "use-cases/knowledge-bank",
               "use-cases/life-log"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Lifestyle",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "index-lifestyle"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "index-changelog"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "About",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "index-about"
             ]
           }
         ]
@@ -51,7 +84,7 @@
     }
   },
   "logo": {
-    "light": "/logo/mashburn_method_light.svg",
+    "light": "/logo/docs_by_amanda_light.svg",
     "dark": "/logo/mashburn_method_light.svg"
   },
   "navbar": {
