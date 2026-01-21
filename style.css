@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@600&display=swap');
+
+strong, b {
+  font-family: "IBM Plex Serif";
+  font-weight: 600;
+}

@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mashburn Method",
+  "name": "Docs by Amanda Mashburn",
   "colors": {
     "primary": "#333333",
     "light": "#333333",
@@ -32,42 +32,29 @@
           {
             "group": "Collections",
             "pages": [
-              "use-cases/daily-planner-and-log",
-              "use-cases/knowledge-bank",
-              "use-cases/life-log"
+              "use-cases/knowledge-bank"
             ]
           }
         ]
       },
       {
-        "tab": "Lifestyle",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": [
-              "index-lifestyle"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Changelog",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": [
-              "index-changelog"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "About",
+        "tab": "About Amanda",
         "groups": [
           {
             "group": "Overview",
             "pages": [
               "index-about"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Change Log",
+        "groups": [
+          {
+            "group": "Change Log",
+            "pages": [
+              "changelog/changelog-2026"
             ]
           }
         ]
