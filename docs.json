@@ -21,7 +21,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Extended Mind System",
+        "tab": "An Extended Mind System",
         "groups": [
           {
             "group": "Overview",
@@ -30,7 +30,13 @@
             ]
           },
           {
-            "group": "Collections",
+            "group": "General Collections",
+            "pages": [
+              "use-cases/daily-planner-and-log"
+            ]
+          },
+          {
+            "group": "Reference Collections",
             "pages": [
               "use-cases/knowledge-bank"
             ]
@@ -38,12 +44,22 @@
         ]
       },
       {
-        "tab": "About Amanda",
+        "tab": "Articles",
         "groups": [
           {
             "group": "Overview",
             "pages": [
-              "index-about"
+              "index-articles"
+            ]
+          },
+          {
+            "group": "Articles",
+            "pages": [
+              "articles/article_open_source_knowledge",
+              "articles/article_on_knowledge_management",
+              "articles/article_on_stoic_philosophy",
+              "articles/article_on_subtraction",
+              "articles/article_tech_stack"
             ]
           }
         ]
