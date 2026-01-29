@@ -17,7 +17,7 @@
       "weight": 400
     }
   },
-  "favicon": "assets/favicon.svg",
+  "favicon": "/assets/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -78,22 +78,10 @@
     }
   },
   "logo": {
-    "light": "assets/docs_by_amanda_light",
-    "dark": "assets/docs_by_amanda_light"
+    "light": "/assets/docs_by_amanda_light.svg",
+    "dark": "/assets/docs_by_amanda_light.svg"
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Contact",
-        "href": "mailto:amandamashburn@proton.me"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Worth with me.",
-      "href": "https://www.amandamashburn.com"
-    }
-  },
+  "navbar": {},
   "contextual": {
     "options": [
      "copy",
