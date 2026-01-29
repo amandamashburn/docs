@@ -17,7 +17,7 @@
       "weight": 400
     }
   },
-  "favicon": "/favicon.svg",
+  "favicon": "assets/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -26,20 +26,14 @@
           {
             "group": "Overview",
             "pages": [
-              "index-extended-mind-system",
-              "extended_mind/em_ref_best_practices"
+              "pages/index_extended-mind-system",
+              "pages/extended_mind_reference_draft_best_practices"
             ]
           },
           {
-            "group": "General Collections",
+            "group": "Collections",
             "pages": [
-              "use-cases/daily-planner-and-log"
-            ]
-          },
-          {
-            "group": "Reference Collections",
-            "pages": [
-              "use-cases/knowledge-bank"
+              "pages/extended_mind_use_case_draft_knowledge_bank"
             ]
           }
         ]
@@ -50,17 +44,13 @@
           {
             "group": "Overview",
             "pages": [
-              "index-articles"
+              "pages/index_articles"
             ]
           },
           {
             "group": "Articles",
             "pages": [
-              "articles/article_open_source_knowledge",
-              "articles/article_on_knowledge_management",
-              "articles/article_on_stoic_philosophy",
-              "articles/article_on_subtraction",
-              "articles/article_tech_stack"
+              "pages/article_placeholder_open_source_knowledge"
             ]
           }
         ]
@@ -71,7 +61,7 @@
           {
             "group": "Change Log",
             "pages": [
-              "changelog/changelog-2026"
+              "pages/changelog-2026"
             ]
           }
         ]
@@ -88,8 +78,8 @@
     }
   },
   "logo": {
-    "light": "/logo/docs_by_amanda_light.svg",
-    "dark": "/logo/mashburn_method_light.svg"
+    "light": "assets/docs_by_amanda_light",
+    "dark": "assets/docs_by_amanda_light"
   },
   "navbar": {
     "links": [
