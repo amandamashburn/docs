@@ -9,12 +9,10 @@
   },
   "fonts": {
     "heading": {
-      "family": "IBM Plex Serif",
-      "weight": 200
+      "family": "IBM Plex Serif"
     },
     "body": {
-      "family": "IBM Plex Serif",
-      "weight": 400
+      "family": "IBM Plex Sans"
     }
   },
   "favicon": "/assets/favicon.svg",
