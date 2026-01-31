@@ -5,201 +5,92 @@ description: ""
 
 ## Overview
 
-The autodidact's dilemma: your learning is constant and natural, but the steady stream of information from a variety of mediums – books, articles, 𝕏 posts, videos, podcasts (all spanning an array of subjects) regularly exposes you to unfamiliar or vaguely-understood topics and ideas you've encountered before but can't quite place. So you make a note in the moment to look up the topic later or research it then and there. But if you're taking the time to look into it and learn about it anyhow, it's worth taking a moment to make a note about it for future reference.
+The knowledge bank is for autodidacts and the intellectually curious.
 
-Enter the knowledge bank. A personal collection of AI generated knowledge articles that serve as your custom reference library – a personal Wikipedia if you will. Tailored to give you a quick introduction to the topic and serve as a starting point for deeper dives (if needed). Overt time, you build a collection that reflects your learning journey and interests – a living record of all the places your curiosity takes you. And when topics resurface (which they inevitably do), you can lean on your existing research and notes to quickly refresh your understanding. 
+It's a collection of structured, AI-generated articles that serve as a custom reference library. Each article provides a focused intro and overview of topics you're unfamiliar with or only vaguely understand. Articles also serve as launch points for deeper exploration.
 
-For my personally, my knowledge base has grown to the point that I search it first before anything else. 
+Topics rarely appear just once. They surface frequently enough to seem familiar but not enough to commit details to memory. Your knowledge bank becomes your first search stop—before reaching for an LLM or Google.
 
 ## Why build your own knowledge base?
 
-So why not just use [Grokipedia](https://grokipedia.com) (my preferred online wiki)? Well, first of all, I think a lot of people default to wikis because that is traditionally how we have approached looking up information. Once upon a time, it was physical encyclopedias. Then, online wikis. But now we have access to LLMs that can write knowledge articles for us. Which means we can customize the output. Set the word length (I prefer around 1 to 2k words) so it remains digestable. You don't need a diserations. Just something to get you up to speed.
+Why not just use [Grokipedia](https://grokipedia.com)? You should. But AI gives you better options for personal learning. Here are the benefits:
 
-Because they're AI-generated with your personal preferences, memories, and system settings baked in, they speak your language and match your mental models. The creation process itself is interactive; you can ask follow-ups and request expansions during generation, and those explanations get incorporated into the final article.
+**Tailored content.** AI-generated articles use your prompts or [skills](https://claude.ai/blog/skills-explained), structured to your preferences. If you use an LLM with memory (like Claude), articles incorporate your context, language, and mental models. The creation process is interactive—ask follow-ups, request expansions, and incorporate them into the final article.
 
-Because these documents sit in your extended mind system, you are able to intereact with them in a way that you cannot with a traditional wiki – add annotations, highlight text, link to other pages within your system (essentially creating a knowledge graph with pages as nodes and links as edges), add custom metadata then build custom views based on that metadata. Treat these as living documents. Incorporate additional information into them over time. Append new insights. You've created a container for that topic that grows with your understanding.
+**Living documents.** Add the initial article, then grow it over time. Link related content, append resources, add new insights as you encounter the topic again. The page evolves with your understanding.
 
+**Annotation and linking.** Highlight text, add notes, and link to other pages in your system. This creates a knowledge graph with pages as nodes and links as edges. Add custom metadata. Make the content yours.
 
+**Discovery and serendipity.** Browsing your collection reveals connections traditional search misses. Re-encountering topics shows how your thinking evolved. Random exploration surfaces unexpected insights.
 
+**Compounding knowledge.** Each article gains value as your graph grows. Cross-referencing deepens. New topics build on existing articles, creating a foundation that accelerates future learning.
 
+**Personal voice.** AI-generated articles match your mental models, use your terminology, and capture *why* topics matter to you—not just what they are.
 
+**Knowledge mapping.** Pages and links reveal learning patterns and "hot spots" in your interests. Articles integrate with your other notes and projects, mapping your intellectual journey over time.
 
+**Intellectual record.** You're building a tangible record of your development—potential foundation for future writing, teaching, or content creation.
 
+**Data loss protection.** Websites disappear, paywalls rise, content changes. Your curated knowledge persists.
 
+## The anatomy of a knowledge article
 
+### A consistent page structure
 
+Use the same structure for every article to reduce cognitive load. Know where to find information and where to file additional notes.
 
+Consistent structure also creates a forcing function for thoroughness and guides learning.
 
+| Section | Description |
+|---------|-------------|
+| **High-Level Overview** | Provides context and explains why the topic matters. Quick orientation without details. |
+| **Key Dates / Timeline** | Birth/death dates, publications, founding dates, major milestones. Only when chronology matters. |
+| **General Information** | Core facts, contributions, characteristics. |
+| **Common Misconceptions** | Include only when relevant. Points out items people often get wrong. |
+| **Recommendations for Further Exploration** | At least 3 high-quality resources (books, papers, videos, courses). Excludes Wikipedia/Grokipedia – points to deeper content. |
+| **Related Topics** | 3-5 related topics with explanation of how and why they connect. Builds understanding of the conceptual landscape. |
+| **Related Pages** | A section for storing internal pages related to this topic.*" Fills over time as you build connections. Maps how the topic fits your knowledge graph. |
+| **Related Links** | A section for storing external web links discovered during research and exploration related to this topic.*" Grows as you encounter the topic and find resources. |
 
+### Metadata
 
+| Field | Purpose |
+|-------|---------|
+| **Created On Date** | When you first documented the topic. Creates a chronological map of your learning journey. Shows what you explored in different periods and highlights curiousity spikes. |
+| **Last Edited** | How recently you interacted with the topic. Indicates if knowledge is fresh or needs refreshing. Reveals topics visited recently. |
+| **Tag(s)** | High-level categories (systems, people, philosophy, technology, etc.). Multiple tags per article. Reveals themes over time. Enables filtered database views. |
+| **Summary** | 1-3 sentence overview for database views. Jogs memory without opening the article. |
 
+These fields transform individual articles into a queryable, filterable system. Sort by creation date for learning chronology, filter by tags for thematic clusters, search summaries to find specific topics.
 
+## Workflow
 
+Two approaches depending on context and urgency.
 
+### Immediate creation
 
+You need to understand a topic *right now*—it's blocking your comprehension. Stop what you're doing, open Claude, generate the article using the knowledge article writer skill. Read it, return to your work with the context you needed.
 
+Add the article to your extended mind system (Notion, Obsidian, etc.). Takes a few minutes. Problem solved, knowledge base built.
 
+### Batched creation
 
-## Why Build Your Own Knowledge Base?
+A topic catches your eye but isn't essential to your current work. Create a placeholder page: **TODO: [Topic Name]**. This captures the topic and makes it easy to locate later via database views or search.
 
-### The Right Tool for the Job
+At day's end or every few days, batch process the TODOs. Generate all articles at once. This creates dedicated time to read slowly, digest information, ask follow-ups, and do additional research. You're learning, not just solving an immediate problem.
 
-Why not just use Wikipedia or Grokipedia? While these resources have their place, they don't serve this specific need well.
+### Choose your approach
 
-General encyclopedias are far too in-depth for quick reference. They can't track your personal learning history, and you can't customize, highlight, or annotate them in meaningful ways. There's no ability to build a personal knowledge graph or tailor content to your individual preferences and context. And with Wikipedia specifically, there are legitimate concerns about bias.
+Immediate creation: topic is pertinent to current work, need knowledge now.
+Batched creation: building your knowledge base proactively, capturing topics for future exploration.
 
-Personal knowledge articles solve these problems. They're right-sized - typically 1 to 2 thousand words - enough to get you up to speed without overwhelming you. Because they're AI-generated with your personal preferences, memories, and system settings baked in, they speak your language and match your mental models. The creation process itself is interactive; you can ask follow-ups and request expansions during generation, and those explanations get incorporated into the final article.
+Develop a rhythm that works for your learning style. Flexibility between approaches makes the system sustainable.
 
-These are living documents. You can highlight them, comment on them, mark them up with your own notes. You can still link to Grokipedia or other sources when you want deeper dives, and you can incorporate additional information over time. As you encounter the topic again in the future, it's easy to append new insights. You've created a container for that topic that grows with your understanding.
-
-### The Compound Benefits
-
-Building a personal knowledge base creates value that multiplies over time.
-
-**Discovery and serendipity.** Browsing your own collection sparks connections you wouldn't find through traditional search. Re-encountering topics after months reveals how your thinking has evolved. Random exploration of your knowledge graph leads to unexpected insights you'd never stumble upon in a standard encyclopedia.
-
-**Compounding knowledge.** Each article becomes more valuable as your graph grows - that's network effects in action. Cross-referencing gets richer over time. New topics build on existing articles, creating a foundation that makes future learning easier and faster.
-
-**Personal voice and understanding.** When AI generates these articles with your context, the explanations match your existing mental models. They use terminology and examples relevant to your background. Most importantly, they capture *why* a topic matters to you specifically, not just what it is. This personalization makes the information stick in a way generic content never could.
-
-**Your personal knowledge graph.** Pages serve as nodes, links as edges. This reveals "hot spots" in your learning and interests - patterns you'd never notice otherwise. The articles sit integrated among all your other notes and projects, showing you what you were encountering at different points in time. It becomes a map of your intellectual journey.
-
-**Intellectual property and portfolio.** You're creating a tangible record of your intellectual development. This could become the foundation for future writing, teaching, or content creation. It demonstrates both breadth and depth of knowledge in a way that a browser history or reading list never could.
-
-**Protection against information loss.** Websites disappear. Paywalls go up. Content changes or gets deleted. Your curated knowledge persists regardless of what happens in the outside world. You've captured what mattered to you at the moment you encountered it.
-
-At its core, keeping a personal knowledge base is about having the topics you encounter at the ready, tailored to your needs, in a system where you can build connections and track your learning journey over time.
-
-
-
-
-
-
-
-
-
-
-
-## Anatomy of a Knowledge Article
-
-### The Power of Consistent Structure
-
-One of the most underrated aspects of building a knowledge base is using the same structure for every article. When every article follows an identical template, you dramatically reduce cognitive load. Your brain doesn't have to figure out where information lives - you know exactly what type of content you'll find and where you'll find it. Jump into any article and within seconds you can locate the timeline, understand the key facts, or find recommendations for deeper exploration.
-
-This consistency pays dividends when you're updating or expanding articles too. You encounter new information about a topic? You know exactly where it belongs. No decision fatigue about how to organize it, no hunting through the document to find the right spot. The structure guides you, making maintenance effortless.
-
-Templates also create a forcing function for thoroughness. When you have a "Common Misconceptions" section, you're prompted to think critically about the topic. When you have a "Related Topics" section, you're encouraged to make connections you might otherwise miss. The structure itself makes you a better learner and knowledge curator.
-
-### The Structure
-
-Every knowledge article follows this eight-section format:
-
-**1. High-Level Overview**
-
-The article opens immediately with 1-2 paragraphs (100-200 words) of plain text - no heading above it. This overview provides context and explains why the topic matters. It's your elevator pitch for the subject, designed to orient you quickly without getting into the weeds.
-
-**2. Key Dates / Timeline**
-
-A two-column table showing the most important chronological markers:
-- Column 1: Date
-- Column 2: Description/Event
-
-This might include birth/death dates for a person, publication dates for a book, founding dates for an organization, or major milestones for an event. Not every topic needs extensive dates, but when chronology matters, having it in a consistent format makes patterns immediately visible.
-
-**3. General Information**
-
-This is the meat of the article - core facts, contributions, or characteristics of the topic. The format mixes paragraphs with bullets and occasional tables, staying skim-friendly without over-relying on any single format. The goal is around 600-1000 words of substantive content that gives you what you need to understand the topic.
-
-**4. Common Misconceptions (if applicable)**
-
-A brief section (2-4 points) outlining what people often get wrong about this topic. This only appears when relevant - not every topic has widespread misconceptions worth addressing. When it does appear, it's invaluable for correcting your own misunderstandings or spotting misinformation when you encounter the topic in the wild.
-
-**5. Recommendations for Further Exploration**
-
-A three-column table with at least 3 high-quality, diverse suggestions:
-- Column 1: Recommendation (book, article, video, course, etc.)
-- Column 2: One-line explanation of the resource's value
-- Column 3: Link (if applicable)
-
-This section explicitly excludes Wikipedia/Grokipedia articles since those are assumed baseline resources. Instead, it points to the next level of depth - specific books, academic papers, documentaries, expert blogs, or courses that would take your understanding further.
-
-**6. Related Topics**
-
-A two-column table listing 3-5 connected topics:
-- Column 1: Related Topic name
-- Column 2: Brief explanation of how and why it connects
-
-This is where your knowledge graph starts to come alive. These aren't just random associations - each entry explains the actual relationship, helping you understand the conceptual landscape around this topic.
-
-**7. Related Pages**
-
-This section contains a simple placeholder: "*This section is for storing internal pages related to this topic.*"
-
-Over time, as you build out your knowledge base and create links between articles, this section fills with actual connections to other pages in your system. It becomes a map of how this topic fits into your broader knowledge graph.
-
-**8. Related Links**
-
-Another placeholder section: "*This section is for storing external web links discovered during research and exploration related to this topic.*"
-
-As you encounter the topic in the future and find valuable resources, you have a designated place to store them. This grows organically as your engagement with the topic deepens.
-
-### Formatting Standards
-
-All articles use plain text and standard Markdown - no emojis, icons, or decorative symbols. This ensures compatibility across platforms (particularly Notion and Obsidian) and keeps the focus on content rather than aesthetics. Tables use standard Markdown pipe syntax, and the writing stays clear, concise, and conversational.
-
-The target length is 1,000-2,000 words, though this adjusts based on the topic's scope. The voice assumes an intelligent but non-specialist audience, avoiding jargon while maintaining substance.
-
-### Page Metadata
-
-Beyond the article content itself, each knowledge article includes four metadata fields that power your database views and help you track your learning patterns:
-
-**Created On Date**
-
-This timestamp tells you when you first encountered and documented this topic. Over time, these dates create a chronological map of your learning journey. You can see what you were exploring in different seasons or years, and identify periods of intense curiosity about particular domains.
-
-**Last Edited**
-
-This shows how recently you've interacted with the topic. When you see a topic come up again and realize you've got an article on it, the last edited date tells you whether your knowledge is fresh (edited last month) or might need refreshing (hasn't been touched in two years). It also helps you identify which topics you keep returning to - those with frequent edits reveal recurring interests.
-
-**Tag(s)**
-
-High-level categories and themes assigned to each page - things like systems, people, philosophy, technology, economics, psychology, or whatever taxonomy makes sense for your knowledge landscape. A single article can have multiple tags. These tags reveal hot spots in your learning over time. You might discover you've created 50 articles tagged "systems thinking" without realizing how central that theme has become. Tags also enable you to build filtered database views - all your philosophy articles in one view, all your technology articles in another.
-
-**Summary**
-
-A one to three sentence overview of the topic that appears in your database views. This lets you jog your memory without opening the full article. When you're scanning through dozens or hundreds of articles in a database view, these summaries are essential for quickly identifying which article contains the information you need. It's the difference between opening ten articles to find the right one and knowing immediately which one to click.
-
-Together, these metadata fields transform your collection of individual articles into a queryable, filterable knowledge system. You can sort by creation date to see your learning chronology, filter by tags to explore thematic clusters, or search summaries to find specific topics without parsing full articles.
-
-## Creating Knowledge Articles: Workflow Approaches
-
-Once you understand the structure, the next question is: when and how do you actually create these articles? The answer depends on context and urgency.
-
-### The Immediate Approach
-
-Sometimes you encounter a topic while reading or researching and you need to understand it *right now*. It's blocking your comprehension of the material in front of you. In these moments, don't hesitate - stop what you're doing, open Claude, and ask it to generate the knowledge article using the knowledge article writer skill. Read the article to get up to speed, then return to whatever you were working on with the context you needed.
-
-Once you've read it, add the article to your extended mind system (Notion, Obsidian, or your platform of choice). The whole process takes just a few minutes, and you've solved your immediate problem while building your knowledge base.
-
-### The Batched Approach
-
-Not every interesting topic requires immediate attention. Sometimes you're reading and come across something that catches your eye - "Oh, that's interesting, I'd like to know more about that" - but it's not essential to what you're doing in the moment.
-
-For these situations, create a placeholder page in your extended mind system with the naming convention: **TODO: [Topic Name]**. This marker serves two purposes: it captures the topic before you forget it, and it makes these pages easy to locate later. You can build database views that surface all your TODO pages, or simply search for "TODO:" to find them.
-
-Then, at the end of the day or every few days, batch process these placeholders. Go through your knowledge bank, identify all the TODO pages, and have Claude generate the articles for each one. This batched approach has a significant advantage: it creates dedicated time to slowly read the articles, digest the information, ask follow-up questions, and do additional research. You're not rushing through to solve an immediate problem - you're actually learning.
-
-### Choosing Your Approach
-
-Both methods have their place. Use immediate creation when the topic is pertinent to your current work and you need the knowledge now. Use batched creation when you're building your knowledge base proactively, capturing interesting topics for future exploration.
-
-Over time, you'll develop a rhythm that works for your learning style and workflow. The flexibility to switch between approaches based on context is part of what makes this system sustainable.
-
-## Implementation in Notion
+## Notion implementation
 
 *[Placeholder: How to set up and maintain knowledge articles in Notion]*
 
-## Implementation in Obsidian
+## Obsidian implementation
 
 *[Placeholder: How to set up and maintain knowledge articles in Obsidian]*
 
@@ -207,7 +98,7 @@ Over time, you'll develop a rhythm that works for your learning style and workfl
 
 *[Placeholder: Prompts, Claude Skills, and other AI tools for creating and maintaining knowledge articles]*
 
-### Knowledge Article Prompt
+### Knowledge article prompt
 
 <Accordion title="Click to view the knowledge article prompt">
 ```text
