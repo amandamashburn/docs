@@ -48,6 +48,7 @@
           {
             "group": "Articles",
             "pages": [
+              "pages/article_infrastructure",
               "pages/article_placeholder_open_source_knowledge"
             ]
           }
