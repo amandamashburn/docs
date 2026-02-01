@@ -25,7 +25,7 @@ This is very much a work in progress - a significant undertaking to document yea
 
 ## View the site
 
-Temporary link as I build: https://mashburnsystemsllc.mintlify.app/
+https://docs.amandamashburn.com
 
 ## License
 
