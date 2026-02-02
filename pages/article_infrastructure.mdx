@@ -9,8 +9,8 @@ description: "The infrastructure behind my personal site and knowledge base - pl
 
 | Site | Description | Repo |
 |------|-------------|------------|
-| [amandamashburn.com](https://amandamashburn.com) | Personal site. Who I am, what I do, how to work with me. | [amandamashburn-com](https://github.com/amandamashburn/amandamashburn-com) |
-| [docs.amandamashburn.com](https://docs.amandamashburn.com) | Public knowledge base. Evergreen articles, my extended mind system, things I'm learning. | [docs](https://github.com/amandamashburn/docs) |
+| [amandamashburn.com](https://amandamashburn.com) | Personal site. Who I am, what I do. | [amandamashburn-com](https://github.com/amandamashburn/amandamashburn-com) |
+| [docs.amandamashburn.com](https://docs.amandamashburn.com) | Public knowledge base. Evergreen content. | [docs](https://github.com/amandamashburn/docs) |
 
 | Component | Role |
 |-----------|------|
@@ -22,11 +22,11 @@ description: "The infrastructure behind my personal site and knowledge base - pl
 
 ## Why build at all
 
-I have quite a bit of knowledge I'd like to share — frameworks, notes, observations. Until now, I haven't shared it. The friction wasn't a lack of ideas. It was that I didn't have a system that felt right.
+I have quite a bit of knowledge I'd like to share — frameworks, notes, observations, etc. Until now, I haven't shared it. The friction wasn't a lack of ideas. It was that I didn't have a system that felt right.
 
-There are out of the box solutions such as Squarespace and public Notion pages that work okay. But they weren't quite what I envisioned. That misalignment was a legitimate blocker. I couldn't bring myself to pour evergreen content into a container that felt wrong. That is because infrastructure - the system through which knowledge is written, organized, and delivered - is as important as the content itself. The medium shapes the experience on both ends. For the author, a misaligned system creates friction that makes it hard to do the work. For the reader, a well-crafted experience is superior to something cobbled together.
+There are out of the box solutions such as Squarespace, public Notion pages, Medium articles that would allow me to publish with minimal effort. But they weren't quite what I envisioned. That misalignment was a legitimate blocker. I couldn't bring myself to pour evergreen content into a container that felt wrong. That is because infrastructure — the system through which knowledge is written, organized, and delivered — is as important as the content itself. The medium shapes the experience on both ends. For the author, a misaligned system creates friction that makes it hard to do the work. For the reader, a well-crafted experience is superior to something cobbled together.
 
-Think of a book. You can print the same words on cheap paper with a flimsy cover, or bind it in leather with pages that are pleasant to the eye and touch. The content is identical. The experience isn't. Or think of power lines: overhead wires and buried cables deliver the same electricity, but one is more resilient, visually clean, more considered. The function is the same. The execution is not.
+Think of a book. You can print the same words on cheap paper with a flimsy cover, or bind it in leather with pages that are pleasant to the eye and touch. The content is identical. The experience is not. Or think of power lines: overhead wires and buried cables deliver the same electricity, but one is more resilient, visually clean, more considered. The function is the same. The execution is not.
 
 In the end, I felt compelled to link up my own system rather than leverage a pre-built solution. I couldn't begin sharing until the foundation felt right. Now it does.
 
@@ -34,7 +34,7 @@ In the end, I felt compelled to link up my own system rather than leverage a pre
 
 A few values drove every decision:
 
-**Portability.** All content is markdown in Git. If any platform disappears tomorrow, I can move the files somewhere else. No proprietary formats. No content trapped in a database I don't control.
+**Portability.** All content is in markdown files with version control. If any platform disappears tomorrow, I can move the files somewhere else. No proprietary formats. No content trapped in a database I don't control.
 
 **No vendor lock-in.** Every component is swappable. Don't like Vercel? Switch to Netlify or Cloudflare Pages. Mintlify not working out? Move the markdown to Docusaurus or Astro. The domain is mine. The content is mine. The services are just rendering layers.
 
@@ -46,9 +46,9 @@ A few values drove every decision:
 
 ## Why this stack
 
-**Vercel.** The obvious choice for hosting, AWS, felt overkill for a project like this. Plus AWS is complex in ways that create risks. Security is easy to misconfigure — leave a port open, set a permission wrong, and you've got a problem. Plus, I didn't want any surprise bills (IYKYK). There's a time and place for AWS. This isn't it. For a personal site, I wanted something simple, straightforward, and secure by default. Vercel deploys from GitHub with zero configuration. It's fast, reliable, built for purpose, and stays out of my way.
+**Vercel.** The obvious choice for hosting, AWS, felt overkill for a project like this. Plus AWS is complex in ways that create risks. Security is easy to misconfigure — leave a port open, set a permission wrong, and you've got a problem. Also, I didn't want any surprise bills (IYKYK). There's a time and place for AWS. This isn't it. For a personal site, I wanted something simple, straightforward, and secure by default. Vercel deploys from GitHub with zero configuration. It's fast, reliable, built for purpose, and stays out of my way.
 
-**Mintlify.** Chosen specifically because they're building for both humans and machines. Docs that are readable and structured for AI, search, and automation. They have an impressive [customer](https://www.mintlify.com/customers) base and momentum. I'm confident they'll keep building something great.
+**Mintlify.** Chosen specifically because they're building for both humans and machines. Docs that are readable and structured for AI, search, and automation. They have an impressive [customer base](https://www.mintlify.com/customers) and momentum. I'm confident they'll keep building something great.
 
 **Cloudflare R2.** Object storage with straightforward and predictable (i.e., less stressful) pricing. A simple way to serve up images and PDFs.
 
@@ -56,9 +56,11 @@ A few values drove every decision:
 
 **GoDaddy.** Consolidated my domains here after Google Domains shut down and Squarespace inherited everything. Not my favorite, but it works.
 
+*Note that the total cost of this setup is $22.00 (the annual cost of my domain). These tools have very generous free tiers.*
+
 ## Building with AI
 
-I'm what one would consider a technical non-engineer. I have a CS degree and 10+ years working in technical environments — but my roles have focused primarily on all the 'managements' (knowledge / product / project / change management) plus governance and compliance. I've worked alongside engineers in infrastructure and software development teams. I've put hands on keyboards for exposure and perspective. But typically, I've been focused on all the other things that needed to get done — beyond pure programming and engineering.
+I'm what one would consider a technical non-engineer. I have a CS degree and 10+ years working in tech — but my roles have focused primarily on all the 'managements' (knowledge / product / project / change management) plus governance and compliance. I've worked alongside engineers in infrastructure and software development teams. I've put hands on keyboards for exposure and perspective. But typically, I've been focused on all the other things that needed to get done — beyond pure programming and engineering.
 
 I knew what I wanted to build, but I did not fully possess the skills to execute it cleanly or efficiently on my own.
 
@@ -72,9 +74,9 @@ But if I sat down with a clear playbook, this is roughly 10 to 15 hours of work 
 
 Keep in mind that time estimate includes learning along the way (again for long term maintenance and understanding). Git and GitHub were my foundation — I was comfortable there. But Vercel, Mintlify, Cloudflare R2, and using the Claude Code CLI were all new to me.
 
-Note that this setup is not hard work for a engineer. It's well below their pay grade. But that's the point. I managed to do this without being an engineer.
+Note that this setup is not hard work for programmers. But that's the point. I managed to do this without being a developer.
 
-And therein lies the beauty of AI — it enables non-engineers to build simple applications which leaves the technically minded free to focus on the hard problems. It's an incredible unlock for all.
+And therein lies the beauty of AI — it enables laymen to build simple applications leaving engineers free to focus on solving the hard problems. It's an incredible unlock for all.
 
 ## What's next
 
@@ -93,4 +95,4 @@ Overall, this project is a good reflection of how I build.
 **Let friction prove the need.** Don't rush to solve discomfort with new tools, added complexity, or irreversible choices. Friction is data. Let real-world experience demonstrate a clear need before building or buying. This system exists because I felt the friction of *not* having it — repeatedly, over time — until the need was undeniable.
 
 
-*Last edited: 2026.02.01*
+*Last update: 2026.02.02*
