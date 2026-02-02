@@ -1,135 +1,96 @@
 ---
-title: "Building digital infrastructure"
-description: ""
+title: "Building my online home"
+description: "The infrastructure behind my personal site and knowledge base - plus the design principles and decisions that shaped it."
 ---
 
-I wanted a personal online presence that I actually controlled. Not a social media profile. Not a rented space on someone else's platform. Something I owned, could evolve over time, and could take with me if any single tool disappeared.
-
-This is what I built and why.
-
-## The Setup
-
-Two sites, one domain, shared infrastructure:
-
-- **[amandamashburn.com](https://amandamashburn.com)** — Personal site. Who I am, what I do, how to work with me.
-- **[docs.amandamashburn.com](https://docs.amandamashburn.com)** — Public knowledge base. Evergreen articles, my extended mind system, things I'm learning.
-
-Both deploy from GitHub. Both pull assets from the same object storage. One domain routes traffic to both.
+## The setup
 
 ![Infrastructure](https://pub-2d2377678ed641f78799466e355c3c0e.r2.dev/architecture-diagram.png)
 
+| Site | Description | Repo |
+|------|-------------|------------|
+| [amandamashburn.com](https://amandamashburn.com) | Personal site. Who I am, what I do, how to work with me. | [amandamashburn-com](https://github.com/amandamashburn/amandamashburn-com) |
+| [docs.amandamashburn.com](https://docs.amandamashburn.com) | Public knowledge base. Evergreen articles, my extended mind system, things I'm learning. | [docs](https://github.com/amandamashburn/docs) |
+
 | Component | Role |
 |-----------|------|
-| [GoDaddy](https://www.godaddy.com) | DNS — routes traffic to the right place |
-| [GitHub](https://github.com) | Version control — all content lives in markdown files |
-| [Vercel](https://vercel.com) | Hosts the personal site |
-| [Mintlify](https://mintlify.com) | Hosts the knowledge base |
-| [Cloudflare R2](https://www.cloudflare.com/products/r2/) | Object storage — images and assets for both sites |
+| [GoDaddy](https://www.godaddy.com) | DNS — routes traffic to the right place. |
+| [GitHub](https://github.com) | Version control — all content lives in markdown files. |
+| [Vercel](https://vercel.com) | Hosts the personal site. |
+| [Mintlify](https://mintlify.com) | Hosts the knowledge base. |
+| [Cloudflare R2](https://www.cloudflare.com/products/r2/) | Object storage — images and assets for both sites. |
 
-Repos: [amandamashburn-com](https://github.com/amandamashburn/amandamashburn-com) · [docs](https://github.com/amandamashburn/docs)
+## Why build at all
 
-## Why Build It at All
+I have quite a bit of knowledge I'd like to share — frameworks, notes, observations. Until now, I haven't shared it. The friction wasn't a lack of ideas. It was that I didn't have a system that felt right.
 
-I have a lot I want to share — notes, frameworks, things I've learned over the years. But for a long time, I didn't share much of it. The friction wasn't a lack of ideas. It was that I didn't have a system that felt right.
+There are out of the box solutions such as Squarespace and public Notion pages that work okay. But they weren't quite what I envisioned. That misalignment was a legitimate blocker. I couldn't bring myself to pour evergreen content into a container that felt wrong. That is because infrastructure - the system through which knowledge is written, organized, and delivered - is as important as the content itself. The medium shapes the experience on both ends. For the author, a misaligned system creates friction that makes it hard to do the work. For the reader, a well-crafted experience is superior to something cobbled together.
 
-Squarespace works. Notion works. But they didn't align with what I wanted. And that misalignment was a legitimate blocker. I couldn't bring myself to pour good content into a vessel that felt wrong.
+Think of a book. You can print the same words on cheap paper with a flimsy cover, or bind it in leather with pages that are pleasant to the eye and touch. The content is identical. The experience isn't. Or think of power lines: overhead wires and buried cables deliver the same electricity, but one is more resilient, visually clean, more considered. The function is the same. The execution is not.
 
-This might sound precious, but I think the infrastructure — the system through which knowledge is written, organized, and delivered — is as important as the content itself. The medium shapes the experience on both ends. For the author, a misaligned system creates friction that makes it hard to do the work. For the reader, even if they can't articulate it, a well-crafted experience feels different than something cobbled together.
+In the end, I felt compelled to link up my own system rather than leverage a pre-built solution. I couldn't begin sharing until the foundation felt right. Now it does.
 
-Think of a book. You can print the same words on cheap paper with a flimsy cover, or bind it in leather with pages that are pleasant to touch. The content is identical. The experience isn't. Or think of power lines: overhead wires and buried cables deliver the same electricity, but one is more resilient, more visually clean, more considered. The function is the same. The craft is not.
-
-Steve Jobs understood this. Apple made the inside of the computer beautiful even though users would never see it. Because the parts you can't see still affect the integrity of the whole. They affect how it feels to build, how long it lasts, how much you trust it.
-
-I don't know why I have such a strong urge to build my own systems rather than rent someone else's. It's a compulsion I can't fully explain. But I know this: I couldn't start sharing until the foundation felt right. Now it does.
-
-## Looks Simple, Wasn't Easy
-
-From the outside, this setup looks deceptively straightforward. Two sites, a few services, some DNS records. How hard could it be?
-
-Harder than I expected.
-
-Once you get into the details, there's a lot of tinkering. Each platform has its own interface, terminology, and quirks. DNS propagation doesn't happen instantly. Things that should connect cleanly sometimes don't. Error messages are cryptic. You make one decision and it unlocks three more decisions you didn't know you needed to make.
-
-I ran into a Mintlify error that told me my domain was "already added" — it wasn't. Turns out it was an issue on their end, but debugging that took time and back-and-forth. That's the kind of thing that doesn't show up in architecture diagrams.
-
-The point isn't to complain. The point is: if you're building something similar and it's taking longer than you expected, that's normal. The finished product looks clean because the messiness got worked out along the way.
-
-## Design Principles
+## Design principles
 
 A few values drove every decision:
 
-**Portability.** All content is markdown in Git. If any platform disappears tomorrow, I can move the files somewhere else and be back online quickly. No proprietary formats. No content trapped in a database I don't control.
+**Portability.** All content is markdown in Git. If any platform disappears tomorrow, I can move the files somewhere else. No proprietary formats. No content trapped in a database I don't control.
 
 **No vendor lock-in.** Every component is swappable. Don't like Vercel? Switch to Netlify or Cloudflare Pages. Mintlify not working out? Move the markdown to Docusaurus or Astro. The domain is mine. The content is mine. The services are just rendering layers.
 
 **Separation of concerns.** The personal site and knowledge base serve different purposes and audiences. Keeping them separate means each can evolve independently. I can redesign one without touching the other.
 
-**Built to scale.** The system is designed to grow. I can add `blog.amandamashburn.com` or `tools.amandamashburn.com` without rethinking the architecture. Add a DNS record, spin up a new repo, point it at a host. The pattern holds. I didn't want to build something that works for today — I wanted something that works for where I'm going.
+**Built to scale.** The system is designed to grow. I can add `shop.amandamashburn.com` or `tools.amandamashburn.com` without rethinking the architecture. Spin up a new repo, add a DNS record, point it at a host. The pattern holds. No major rework required or tech debt to deal with down the line (theoretically).
 
-**Aesthetics matter.** Functional isn't enough. I care about how things look and feel. The architecture diagram you see above went through several iterations until it matched the clarity I wanted. That same attention applies to the sites themselves.
+**Aesthetics matter.** Functionality alone isn't sufficient. Look and feel are equally important. The architecture diagram you see above went through several iterations until it matched the simplicuty and clarity I wanted. That same attention applies to the sites themselves (including the parts you don't see).
 
-## Why These Tools
+## Why this stack
 
-**Vercel** — I have AWS experience. I spent a semester learning it academically and worked with it in an enterprise environment — Terraform, EC2 instances, S3, DynamoDB. At Ally Financial, I contributed to building a secure AWS environment for hosting machine learning models.
+**Vercel.** The obvious choice for hosting, AWS, felt overkill for a project like this. Plus AWS in complex in ways that create risks. Security is easy to misconfigure — leave a port open, set a permission wrong, and you've got a problem. Plus, I didn't want any surprise bills (IYKYK). There's a time and place for AWS. This isn't it. For a personal site, I wanted something simple, straightforward, and secure by default. Vercel deploys from GitHub with zero configuration. It's fast, reliable, built for purpose, and stays out of my way.
 
-But AWS makes me squirm for a project like this. It's powerful, but it's also complex in ways that create risk. Security is easy to misconfigure — leave a port open, set a permission wrong, and you've got a problem. Billing is unpredictable and opaque. I've seen enough horror stories of unexpected charges to be cautious.
+**Mintlify.** Chosen specifically because they're building for both humans and machines. Docs that are readable and structured for AI, search, and automation. They have an impressive [customer](https://www.mintlify.com/customers) base and momentum. I'm confident they'll keep building something great.
 
-There's a time and place for AWS. This isn't it. For a personal site, I wanted something simpler, more straightforward, and secure by default. Vercel deploys from GitHub with zero configuration. It's fast, reliable, and stays out of my way. Right tool for the job.
+**Cloudflare R2.** Object storage with straighforward and predictable (i.e., less stressful) pricing. A simple way to serve up images and PDFs.
 
-**Mintlify** — I chose them specifically because they're building for both humans and machines. Docs that are readable and structured for AI, search, and automation. They have serious customers and momentum. I'm confident they'll keep building something great.
+**GitHub.** Industry standard. Version history, collaboration if needed down the road, and content stays portable.
 
-**Cloudflare R2** — S3-compatible object storage without egress fees. I'm using it for both sites, so centralizing assets made sense.
+**GoDaddy.** Consolidated my domains here after Google Domains shut down and Squarespace inherited everything. Not my favorite, but it works.
 
-**GitHub** — Industry standard. Version history, collaboration if I ever want it, and the content stays portable.
+## Building with AI
 
-**GoDaddy** — Consolidated my domains here after Google Domains shut down and Squarespace inherited everything. Not glamorous, but it works.
+I'm what one would consider a technical non-engineer. I have a CS degree and 10+ years working in technical environments — but my roles have focused primarily on all the 'managements' (knowledge / product / project / change management) plus governance and compliance. I've worked alongside engineers in infrastructure and software development teams. I've put hands on keyboards for exposure and perspective. But typically, I've been focused on all the other things that needed to get done — beyong pure programming and engineering.
 
-## How I Built It (With AI)
+I knew what I wanted to build, but I did not have fully posses the skills to execute it cleanly or effeciently on my own.
 
-I'm a technical non-engineer. I have a CS degree and 10+ years working in technical environments — but my roles have focused on knowledge management, product management, governance, compliance, and developer relations. I've worked alongside engineers in infrastructure and software development teams. I've put hands on keyboards for exposure and perspective. But typically, I've been focused on all the other things that needed to get done — the work that enables engineers to do their work.
+I used [Claude](https://claude.ai) and Claude Code throughout the entire process: repo setup, configurations, debugging, architecture decisions, writing, editing, etc. Claude even created the included architecture diagram and drafted this article based on my input.
 
-I understood what I wanted to build. I did not have all the knowledge to execute it cleanly on my own.
+AI didn't replace my thinking, but it did amplify and accelerate the execution of my vision.
 
-I used [Claude](https://claude.ai) and Claude Code throughout the entire process:
+Overall, the setup is simple, but it took more effort than expected (even with AI assistance). There was a lot of tinkering to be done — lots of little decisions to be made when digging into the details. One decision seemed to lead to three more.
 
-- **DNS configuration** — Claude walked me through exactly which records to add in GoDaddy and what values Mintlify needed.
-- **Debugging** — When Mintlify threw a "domain already added" error, we troubleshot it together and identified it was on their end.
-- **Architecture decisions** — I talked through options and tradeoffs. What should live where? How should things connect?
-- **This diagram** — Claude built it based on my description. I asked for minimalist. We iterated on colors, fonts, layout until it was right.
-- **This article** — I described what I wanted to communicate. Claude helped structure and write it.
+But if I sat down with a clear playbook, this is roughly 10 to 15 hours of work for someone with my background.
 
-The AI didn't replace my thinking. It amplified my execution.
+Keep in mind that time estimate includes learning along the way (again for long term maintenance and understanding). Git and GitHub were my foundation — I was comfortable there. But Vercel, Mintlify, Cloudflare R2, and using the Claude Code CLI were all new to me.
 
-## Level of Effort
+Note that this setup is not hard work for a engineer. It's well below their pay grade. But that's the point. I managed to do this without being an engineer.
 
-I tinkered with this on and off over a couple of months. But if I sat down with a clear playbook and focused, this is roughly **10-15 hours of work** for someone with my background.
+And therein lies the beauty of AI — it enables non-engineers to build simple applications which leaves the technically minded free to focus on the hard problems. It's an incredible unlock for all.
 
-That includes: domain transfers, DNS configuration, setting up deployments, connecting object storage, debugging issues, and learning each platform's quirks.
+## What's next
 
-And it was a lot of learning. Git and GitHub were my foundation — I was comfortable there. But Vercel, Mintlify, and Cloudflare R2 were all new to me. Each platform has its own mental model. You're not just configuring things; you're learning how the tool thinks so you can work with it effectively.
+The infrastructure for my online presence is done. And "done" is the key word — this isn't something that will need to be revisited constantly. The setup took time, but it should require relatively little maintenance going forward. The pipes are connected. The foundation is laid.
 
-An experienced DevOps engineer could do this faster. But that's the point — I didn't need to be one. And I didn't need to pull one off other work to help me.
+Now I can shift focus to the content — the ideas, the knowledge worth sharing.
 
-## Why This Matters
+## A general approach to how I build
 
-This is not hard work for a senior engineer. It's well below their pay grade. But it's exactly the kind of work that piles up, gets deprioritized, or requires waiting for someone else's availability.
+Overall, this project is a good reflection of how I build.
 
-With AI, I executed this myself. No tickets filed. No waiting in a sprint backlog. No engineer context-switching away from harder problems to help me configure DNS.
-
-This is the shift: technical non-engineers can now self-serve on work that previously required specialists. That frees up those specialists for the problems that actually need them.
-
-## What's Next
-
-The infrastructure is done. And "done" is the key word — this isn't something I'll need to revisit constantly. The setup took effort, but it should require relatively little maintenance going forward. The pipes are connected. The foundation is laid.
-
-Now I can shift focus to the content — the ideas, the things worth sharing. But the infrastructure isn't separate from that. It's part of it. The vessel shapes what it holds.
-
----
-
-This is how I approach building:
-
-**Modular, portable, intentional.** Start with what you need, design for where you're going, and choose tools you can leave if you have to.
+**Modular, portable, intentional.** Begin with what you need, design for ease of maintenance / scale, and reserve the ability to swap out parts to avoid lock-in / painful migrations.
 
 **Every component must serve a purpose.** There's no fluff in this system. Nothing here exists because it seemed like a good idea or because someone else was doing it. Every piece is wanted and needed.
 
-**Let friction prove the need.** I don't rush to solve discomfort with new tools, added complexity, or irreversible choices. Friction is data. I let real-world experience demonstrate a clear need before I build or buy. This system exists because I felt the friction of *not* having it — repeatedly, over time — until the need was undeniable.
+**Let friction prove the need.** Don't rush to solve discomfort with new tools, added complexity, or irreversible choices. Friction is data. Let real-world experience demonstrate a clear need before building or buying. This system exists because I felt the friction of *not* having it — repeatedly, over time — until the need was undeniable.
+
+
+*Last edited: 2026.02.01*
