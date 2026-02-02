@@ -42,15 +42,15 @@ A few values drove every decision:
 
 **Built to scale.** The system is designed to grow. I can add `shop.amandamashburn.com` or `tools.amandamashburn.com` without rethinking the architecture. Spin up a new repo, add a DNS record, point it at a host. The pattern holds. No major rework required or tech debt to deal with down the line (theoretically).
 
-**Aesthetics matter.** Functionality alone isn't sufficient. Look and feel are equally important. The architecture diagram you see above went through several iterations until it matched the simplicuty and clarity I wanted. That same attention applies to the sites themselves (including the parts you don't see).
+**Aesthetics matter.** Functionality alone isn't sufficient. Look and feel are equally important. The architecture diagram you see above went through several iterations until it matched the simplicity and clarity I wanted. That same attention applies to the sites themselves (including the parts you don't see).
 
 ## Why this stack
 
-**Vercel.** The obvious choice for hosting, AWS, felt overkill for a project like this. Plus AWS in complex in ways that create risks. Security is easy to misconfigure — leave a port open, set a permission wrong, and you've got a problem. Plus, I didn't want any surprise bills (IYKYK). There's a time and place for AWS. This isn't it. For a personal site, I wanted something simple, straightforward, and secure by default. Vercel deploys from GitHub with zero configuration. It's fast, reliable, built for purpose, and stays out of my way.
+**Vercel.** The obvious choice for hosting, AWS, felt overkill for a project like this. Plus AWS is complex in ways that create risks. Security is easy to misconfigure — leave a port open, set a permission wrong, and you've got a problem. Plus, I didn't want any surprise bills (IYKYK). There's a time and place for AWS. This isn't it. For a personal site, I wanted something simple, straightforward, and secure by default. Vercel deploys from GitHub with zero configuration. It's fast, reliable, built for purpose, and stays out of my way.
 
 **Mintlify.** Chosen specifically because they're building for both humans and machines. Docs that are readable and structured for AI, search, and automation. They have an impressive [customer](https://www.mintlify.com/customers) base and momentum. I'm confident they'll keep building something great.
 
-**Cloudflare R2.** Object storage with straighforward and predictable (i.e., less stressful) pricing. A simple way to serve up images and PDFs.
+**Cloudflare R2.** Object storage with straightforward and predictable (i.e., less stressful) pricing. A simple way to serve up images and PDFs.
 
 **GitHub.** Industry standard. Version history, collaboration if needed down the road, and content stays portable.
 
@@ -58,9 +58,9 @@ A few values drove every decision:
 
 ## Building with AI
 
-I'm what one would consider a technical non-engineer. I have a CS degree and 10+ years working in technical environments — but my roles have focused primarily on all the 'managements' (knowledge / product / project / change management) plus governance and compliance. I've worked alongside engineers in infrastructure and software development teams. I've put hands on keyboards for exposure and perspective. But typically, I've been focused on all the other things that needed to get done — beyong pure programming and engineering.
+I'm what one would consider a technical non-engineer. I have a CS degree and 10+ years working in technical environments — but my roles have focused primarily on all the 'managements' (knowledge / product / project / change management) plus governance and compliance. I've worked alongside engineers in infrastructure and software development teams. I've put hands on keyboards for exposure and perspective. But typically, I've been focused on all the other things that needed to get done — beyond pure programming and engineering.
 
-I knew what I wanted to build, but I did not have fully posses the skills to execute it cleanly or effeciently on my own.
+I knew what I wanted to build, but I did not fully possess the skills to execute it cleanly or efficiently on my own.
 
 I used [Claude](https://claude.ai) and Claude Code throughout the entire process: repo setup, configurations, debugging, architecture decisions, writing, editing, etc. Claude even created the included architecture diagram and drafted this article based on my input.
 
