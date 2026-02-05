@@ -25,13 +25,13 @@
             "group": "Overview",
             "pages": [
               "pages/index_extended-mind-system",
-              "pages/extended_mind_reference_draft_best_practices"
+              "pages/extended_mind_best_practices"
             ]
           },
           {
             "group": "Collections",
             "pages": [
-              "pages/extended_mind_use_case_draft_knowledge_bank"
+              "pages/use_case_knowledge_bank"
             ]
           }
         ]
