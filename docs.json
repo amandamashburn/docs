@@ -19,10 +19,33 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "Get Started",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "pages/index_get_started"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Articles",
+        "groups": [
+          {
+            "group": "Articles",
+            "pages": [
+              "pages/article_infrastructure",
+              "pages/article_open_source_knowledge"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "An Extended Mind System",
         "groups": [
           {
-            "group": "Overview",
+            "group": "Get Started",
             "pages": [
               "pages/index_extended-mind-system",
               "pages/extended_mind_best_practices"
@@ -32,24 +55,6 @@
             "group": "Collections",
             "pages": [
               "pages/use_case_knowledge_bank"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Articles",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": [
-              "pages/index_articles"
-            ]
-          },
-          {
-            "group": "Articles",
-            "pages": [
-              "pages/article_infrastructure",
-              "pages/article_open_source_knowledge"
             ]
           }
         ]
