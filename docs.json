@@ -100,5 +100,14 @@
       "github": "https://github.com/amandamashburn",
       "linkedin": "https://www.linkedin.com/in/amandamashburn/"
     }
+  },
+  "seo": {
+    "metatags": {
+      "og:image": "https://docs.amandamashburn.com/assets/social-card-nodes.png",
+      "og:site_name": "Docs by Amanda Mashburn",
+      "twitter:card": "summary_large_image",
+      "twitter:site": "@AmandaMashburn",
+      "twitter:image": "https://docs.amandamashburn.com/assets/social-card-nodes.png"
+    }
   }
 }
