@@ -57,6 +57,12 @@
               "pages/use-case-life-log",
               "pages/use_case_knowledge_bank"
             ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "pages/reference-life-events"
+            ]
           }
         ]
       },
@@ -77,7 +83,7 @@
         {
           "anchor": "Amanda Mashburn",
           "href": "https://www.amandamashburn.com",
-          "icon": "globe"
+          "icon": "house"
         }
       ]
     }
