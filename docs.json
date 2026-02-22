@@ -54,6 +54,7 @@
           {
             "group": "Collections",
             "pages": [
+              "pages/use-case-life-log",
               "pages/use_case_knowledge_bank"
             ]
           }
