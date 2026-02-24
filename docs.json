@@ -16,6 +16,10 @@
     }
   },
   "favicon": "/assets/favicon.svg",
+  "banner": {
+    "content": "Work in progress. Check back often – new use cases and articles are added as they are documented.",
+    "dismissible": false
+  },
   "navigation": {
     "tabs": [
       {
@@ -24,7 +28,7 @@
           {
             "group": "Get Started",
             "pages": [
-              "pages/index_get_started"
+              "pages/index-get-started"
             ]
           }
         ]
@@ -35,8 +39,8 @@
           {
             "group": "Articles",
             "pages": [
-              "pages/article_infrastructure",
-              "pages/article_share_knowledge"
+              "pages/article-infrastructure",
+              "pages/article-share-knowledge"
             ]
           }
         ]
@@ -47,21 +51,23 @@
           {
             "group": "Get Started",
             "pages": [
-              "pages/index_extended-mind-system",
-              "pages/extended_mind_best_practices"
+              "pages/index-extended-mind-system",
+              "pages/reference-best-practices"
             ]
           },
           {
             "group": "Collections",
             "pages": [
-              "pages/use-case-life-log",
-              "pages/use_case_knowledge_bank"
+              "pages/collection-life-log",
+              "pages/collection-knowledge-bank"
             ]
           },
           {
             "group": "Reference",
             "pages": [
-              "pages/reference-life-events"
+              "pages/reference-life-events",
+              "pages/reference-best-practices",
+              "pages/reference-science"
             ]
           }
         ]
