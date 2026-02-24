@@ -17,7 +17,7 @@
   },
   "favicon": "/assets/favicon.svg",
   "banner": {
-    "content": "Work in progress. Check back often – new use cases and articles are added as they are documented.",
+    "content": "Work in progress. Check back often – pages added as they are documented.",
     "dismissible": false
   },
   "navigation": {
@@ -52,7 +52,8 @@
             "group": "Get Started",
             "pages": [
               "pages/index-extended-mind-system",
-              "pages/reference-best-practices"
+              "pages/extended-mind-Notion-v-Obsidian",
+              "pages/extended-mind-databases-and-metadata"
             ]
           },
           {
