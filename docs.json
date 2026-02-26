@@ -17,7 +17,7 @@
   },
   "favicon": "/assets/favicon.svg",
   "banner": {
-    "content": "Work in progress. Check back often – pages added as they are documented.",
+    "content": "Work in progress. See Change Log for updates.",
     "dismissible": false
   },
   "navigation": {
@@ -59,15 +59,25 @@
           {
             "group": "Collections",
             "pages": [
+              "pages/collection-books-and-papers",
+              "pages/collection-core-principles",
+              "pages/collection-daily-planner-log",
+              "pages/collection-knowledge-bank",
               "pages/collection-life-log",
-              "pages/collection-knowledge-bank"
+              "pages/collection-opinion-bank",
+              "pages/collection-people",
+              "pages/collection-places",
+              "pages/collection-projects",
+              "pages/collection-routines",
+              "pages/collection-things"
             ]
           },
           {
             "group": "Reference",
             "pages": [
               "pages/reference-life-events",
-              "pages/reference-science"
+              "pages/reference-science",
+              "pages/reference-further-reading"
             ]
           }
         ]
