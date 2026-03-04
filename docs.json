@@ -89,6 +89,7 @@
           {
             "group": "Change Log",
             "pages": [
+              "pages/change-log-about",
               "pages/change-log"
             ]
           }
