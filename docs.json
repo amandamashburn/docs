@@ -90,7 +90,7 @@
           {
             "group": "Change Log",
             "pages": [
-              "pages/change-log-about",
+              "pages/index-change-log",
               "pages/change-log"
             ]
           }
