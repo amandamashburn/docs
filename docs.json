@@ -39,6 +39,7 @@
           {
             "group": "Articles",
             "pages": [
+              "pages/index-articles",
               "pages/article-infrastructure",
               "pages/article-share-knowledge",
               "pages/article-DE-SC-26-016",
