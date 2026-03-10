@@ -28,7 +28,8 @@
           {
             "group": "Get Started",
             "pages": [
-              "pages/index-get-started"
+              "pages/index-get-started",
+              "pages/license"
             ]
           }
         ]
