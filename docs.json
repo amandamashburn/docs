@@ -57,7 +57,8 @@
             "pages": [
               "pages/index-extended-mind-system",
               "pages/extended-mind-Notion-v-Obsidian",
-              "pages/extended-mind-databases-and-metadata"
+              "pages/extended-mind-databases-and-metadata",
+              "pages/extended-mind-database-defaults"
             ]
           },
           {
