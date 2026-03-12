@@ -1,158 +1,169 @@
 ---
-title: "Databases & metadata (DRAFT)"
-description: "A crash course on databases, metadata, and views – the foundational concepts behind the entire Extended Mind System."
+title: "Databases & metadata"
+description: "A crash course on databases, metadata, and views – the foundational concepts behind this system."
 ---
 
-<Callout icon="clock" color="#D3D3D3" iconType="regular">
-This article is coming soon. The preview below outlines what will be covered when complete.
-</Callout>
+import MyComponent from '/pages/snippet-01.mdx';
 
-## What to expect
+Before jumping into individual collections, you need to have a grasp of databases and metadata. These two concepts are the foundation of everything in this system.
 
-Everything in the Extended Mind System lives in a database. Before diving into any individual collection, it's worth taking the time to understand what databases actually are, why they're so useful for organizing information, and how to get the most out of them in Notion and Obsidian.
+## What is a database?
 
-This is required reading before exploring any of the collections. The concepts here show up everywhere.
+A [database](https://grokipedia.com/page/Database) is an organized collection of structured information that allows for efficient management, retrieval, and querying. For our purposes, think of it as a collection of items organized in rows and columns – where each row is a page and each column is a piece of information about that page.
 
-## What will be covered
+## What is metadata?
 
-**What a database is** – At its core, a database is just a structured collection of related items. Your reading list is a database. Your project list is a database. Once you start seeing information this way, it changes how you think about organizing everything.
+[Metadata](https://grokipedia.com/page/Metadata) is data about data. It's structured information that describes, explains, or locates a primary piece of content – making it easier to find, sort, and use.
 
-**What metadata is** – Metadata is information *about* your information. The author of a book, the status of a project, the date you saved an article – these are all metadata. We'll cover what metadata fields are, how to choose them, and which standard fields show up across almost every use case in this system.
-
-**Building views** – One of the most powerful features of both tools is the ability to look at the same database in completely different ways without changing the underlying data. We'll cover filtering, sorting, grouping, and calculations – including custom formulas – and how to build views that surface exactly what you need, when you need it.
-
-**Pages within databases** – Each entry in a database is also a full page. That's where the real magic is. The database gives you structure and organization; the page gives you depth. A single entry can hold text, images, embedded videos, links, and more – all organized under the same metadata that makes it findable and sortable.
-
-**Database templates** – Templates let you define a starting structure for every new entry. A new book always opens with the same metadata fields. A new project always starts with the same sections. This is one of the highest-leverage habits you can build – it eliminates friction and enforces consistency without any extra effort.
-
-**Notion implementation** – How databases work natively in Notion, the different view types available, quirks to be aware of, and how linked databases differ from source databases.
-
-**Obsidian implementation** – How [Bases](https://help.obsidian.md/bases) treats your Markdown notes as database records and their properties (stored as YAML frontmatter) as fields – giving you filterable, sortable, grouped views over your entire vault. We'll cover how Bases works, how it integrates with Obsidian's existing Properties system, and what the quirks are worth knowing about.
-
-## Overview
-
-This page is predeminately written for those who have never worked with nor have a conceptual undertstanding of databases.
-
-So if you are familiar with the concept of databases and metadata then skip the sections of the page that cover those concepts. You'll still benefit from the remaining sections as they are foundational to how I organize collections.
-
-<Callout icon="arrow-right-long" color="#D3D3D3" iconType="regular">
-I use the term collection and database interchangeably throughout this site.
-</Callout>
-
-## Database defined
-
-A database is an organized collection of structured information (often in rows and columns) that allows for effecient management, retrieval, and querying with the ability to build-in constraints that ensure data accuracy.
-
-Whether you realize it or not, the majority of people interact with databases regularly. When you search for a product online, check your bank balance, or look up a flight, you're pulling information from a database. 
-
-For more information see: https://grokipedia.com/page/Database
-
-## Metadata defined
-
-Metadta is information about information or data about data.
-It is structured information that describes, explains, locates, or otherwise makes it easier to retrieve, use, or manage other data. It's information that describes characteristics about the primary data. 
-
-Some common examples of metadata.
+Here are a few everyday examples:
 
 | Primary source | Metadata |
 |----------------|----------|
 | book | author, publisher, publication date, ISBN |
-| photo | timestamp, location, photo device |
+| photo | timestamp, location, device |
 | email | sender, recipient(s), timestamp, subject |
 
-For more information see: https://grokipedia.com/page/Metadata
+The book itself is the content. Everything else – author, date, ISBN – is metadata.
 
-## Organizing with databases v. organizing with folders
+## Why databases instead of folders?
 
-In both Notion and Obsidian, you have the option to use folders in lieu of databases. 
-But I advocate using databases as a fundamental design choice.
+A foundational decision in this system is that pages are organized into databases, not folders. Let me explain why.
 
-This is a fundamental concept of organization.
-Flat file system v. nested file system
-Both consist of a collection of pages
-But one method allows you to slice and dice with ease and layer in reporting elements. 
-Introducing relations (for advanced use).
+The majority of people organize digital files like they do physical ones – folders, subfolders, maybe some subfolders inside those subfolders. And that made sense once. When a single physical sheet of paper can only be slotted into one file folder, or a physical book has to be organized in a linear fashion where a piece of information can only belong to one section or chapter. But this method of organization is a relic of the physical world.
 
-When you step back, you realize that our lives center around some commone high level themes and common collections. Those would normally live as folders.
+But computers freed us from that constraint around the 1960s. The problem is that most never updated their mental model, so they kept organizing digitally the way they organized physically. Also, to be fair, datavases weren't the most accessible initially, but tools like Notion and Obsidian came along and changed that. Now anyone can use them. And once you do, you'll wonder how you managed without them.
 
-So why organize information in databases? Before we answer that, let's look at how data has been traditionally organized – with file systems.
+Here's why I advocate for databases so heavily. It comes down to two things:
 
-Think of the files on your computer. You create folders. Sometimes you nest folder. And then you add files within those folders. This system does work. But it is a relic of the physical world where a single physical sheet of paper can only be slotted into one file folder.
+1. The ability to assign and manage metadata for every page with ease.
+2. The ability to create different views based on that metadata – letting you zoom in and zoom out or slice and dice a collection however you need to.
 
-Computers obviously changed this but many have stuck with the file system because while databases have existed since the 1960s, they weren't the most accessible to use and had limitations. But tools such as Notion and Obsidian have changed this. They have made databases accessible for non-technical users. The power of databases comes from views.
+Let me show you what I mean.
 
-With databases – you can filter, sort, and group your pages.
+## The recipe example
 
-Let's use recipes as an example. You could create a recipe folder. And then sub folders around appetizers, salads, entrees, soups, and desserts.
+Say you have a collection of 100 recipes. Your instinct might be to throw them into a folder, or maybe create subfolders for categories like appetizers, salads, entrees, soups, and desserts.
 
-But that is merely one attribute that can be assigned to a recipe. You could also categorize recipes by
-- their predominent ingredient (e.g., beef, chicken, veg)
+That works – to a point.
+
+Entree type (the organizing principle behind most cookbooks) is just one attribute of a recipe. What about all the others? You could also describe a recipe by:
+
+- predominant ingredient (beef, chicken, vegetarian)
 - cooking time
 - skill level
-- seasons
+- season
 - equipment required
-- where you found the recipe (e.g, family recipe, cooking magazine, online recipe)
-- recipes you've cooked v. ones you want to try
+- where you found it (family recipe, cooking magazine, online)
+- recipes you've made vs. ones you want to try
 
-If you have recipes categorized by meal type but then want to view say only your family recipes that have been passed down or want to see dishes with season ingredients for Spring, you have no good way of viewing them within your file system (unless you happen to be very diligent about tagging).
+With a folder system, you have to pick one. Beef stew goes in "entrees." That's it. If you later want to find all your family recipes, or pull together a list of dishes that use seasonal spring ingredients, you have no good way to do that – unless you happen to be very diligent about manually tagging files, which most people aren't.
 
-Now, if you were to create a database of recipes – you can now have a page that contains the recipe, but then you can have additional properties (e.g., metadata) for each of the items listed above.
+Now imagine a database of those same 100 recipes. Each recipe is still a page – with the full recipe, your notes, maybe a photo of how it turned out, a link to a video tutorial. But now each page also has metadata fields attached: meal type, main ingredient, cooking time, skill level, season, source, and whether you've attempted the recipe.
 
-Then you could build specific views based on that metadata. Perhaps you create a view grouped by meal type and then another view grouped by season. Or perhaps, you want to add a tag called 'Thanksgiving' so you can build a view off all your go to reciipes for your annual Thanksiving day meal. 
+With that metadata in place, you can build views. A view grouped by meal type. Another filtered to only show spring dishes. A view tagged "Thanksgiving" that pulls every recipe you reach for for that one day a year. You're not reorganizing anything – the underlying pages stay exactly where they are. You're just looking at them through a different lens.
 
-As you can see, a database allows you to build different views based on what you want and need to see while all the underlying pages remain in a single collection. 
+And here's where tags come in. Some categories don't need their own dedicated field – they're too specific or too occasional to justify it. That's what tags are for. You might tag a recipe "company dinner" for the dishes you pull out when you're hosting, or "quick weeknight" for the ones you can make when you're exhausted and have 30 minutes. Those aren't fields you need permanently – they're just labels that let you pull a specific subset when the moment calls for it.
 
-And views are extremely straight forward to create. So it's easy to spin them up for a permanent view you want to work in or you could easily create a temporary view for the task at hand and delete it when done.
+This is the core promise of a database: one collection, many ways to look at it – without ever having to reorganize the underlying pages.
 
-Databases make it far easier to query and manipulate your pages / files. You don't have to limit yourself to a single heirarchy.
+## Each entry is also a page
 
-This is why the extended mind is organized around databases that I call collections. Through years of experimentation I've identified some high level buckets that your life's information can belong to. Those make up the core collection (e.g., people, places, things to name a few). Then there are additional reference collection items that get a bit more detailed (quotes, books, family history notes, etc).
+One thing worth pausing on: in a database, each row is a full page. That's where the actual content resides.
 
-The idea is to keep like documents with like.
+The database gives you structure – the metadata, the fields, the views. The page gives you the content itself. The full recipe. Your notes. A photo. Anything you want to capture. The two work together.
 
-And, another benefit of databases, should you ever get to this place is the ability to create relationships between databases. This is a more advanced topic that will not be covered here, but the point is, a database sets you up to scale and develop more complex relationships between pages should the need arise in time.
+I'll go deeper on this in *pages as containers (pending)*. For now, just know that a database entry isn't a flat record – it's a document with structure on top of it.
 
 ## Standard metadata
 
+Every database in the extended mind system starts with the same core set of metadata fields. As you move through the collections, you'll see these everywhere. They're the foundation – and from there, each collection adds whatever additional fields it needs.
+
+Before I walk through them, a word of caution: **when it comes to metadata, less is more.**
+
+The most common mistake I see when people set up their own databases is creating too many fields upfront which is busywork disguised as productivity. Metadata is only useful if it's maintained. The more fields you introduce, the more ongoing admin work you're creating for yourself – and that's how you end up spending more time maintaining your system than actually using it.
+
+My recommendation: start with the standard fields below. If you keep running into a situation where you can't build a view you want, that's your signal that a new field might be useful. Add it then. Not before.
+
 ### Created on
 
-Pending.
+*Maintenance: Auto-update*
+
+The created on date tells you when a page first entered your system – when you had an idea, encountered a topic, or decided something was worth capturing.
+
+This field gets more valuable over time. After a year or two, you'll start to see patterns. Clusters of pages around certain themes. Long stretches of activity in one area, then silence. Spikes that map to specific periods in your life. It becomes a quiet record of where your attention was – and when.
+
+If you ever export a database to CSV, this is a great field to graph. You'll see the spikes clearly. The calendar view (in Notion) gives you a similar picture inside the tool itself.
 
 ### Last edited
 
-Pending.
+*Maintenance: Auto-update*
+
+Last edited tells you which pages you've touched most recently. Compared against the created on date, it also gives you a sense of a page's longevity – whether something you captured years ago is still actively in use, or has sat untouched since the day you created it.
+
+I sort most of my databases by last edited date in descending order by default. Whatever I've touched most recently sits at the top. It's a natural way to surface where your current focus is.
 
 ### Tag(s)
 
-Pending.
+*Maintenance: AI-generated or manual update*
+
+Tags are the workhorse of metadata. They're flexible, they're powerful, and they're one of the best places to bring AI into your workflow.
+
+When you're starting out, you often don't know yet what categories you'll actually need. Tags let you assign labels freely without committing to a formal field structure. Over time, if you find yourself assigning the same tag to almost every page in a collection, that's a sign it might be worth promoting to its own dedicated field. But until that pattern is clear, tags hold it for you.
+
+Tags are also useful for edge cases – labels that apply to a handful of pages but not the rest of the collection. You get to capture the category without bloating your field structure.
+
+And tags reveal cross-collection themes. In my own system, I noticed I was collecting pages related to subtraction and domestic science across my knowledge bank, books, quotes, and general notes – all in separate collections. By tagging those pages consistently, I can build a single view that pulls all of them together, regardless of which collection they live in. No dedicated field needed. No reorganization required.
+
+Finally – tags and AI work well together. My workflow: I have AI review the page content, the collection context, and my existing tags, then propose relevant labels. I review the suggestions, keep what fits, adjust what doesn't. It reduces the cognitive load of categorization while making sure I'm not missing an applicable category I would have otherwise overlooked.
+
+To recap:
+- Use tags to guide you toward the attributes that actually matter across a collection.
+- Use tags for edge cases that don't warrant their own field.
+- Use tags to surface themes across collections.
+- Let AI suggest them, then refine.
 
 ## Database views
 
-Pending.
+Now here's where everything comes together. All that metadata you've been assigning? This is what it's for.
 
-## Standard database views
+A view is just a filtered, sorted, or grouped window into your database. It doesn't move or change your pages – it just surfaces a specific subset of them based on the metadata you've defined. And because views are built on top of your metadata, the quality of your metadata directly determines what views are possible.
 
-Pending.
+For a life log, you might create a view that shows only long-form journal entries. For your knowledge bank, a view filtered to a particular theme. For your projects, a view showing only what's actively in progress. Same underlying collection each time – different lens.
 
-## A note on temporary database views
+<Callout icon="arrow-right-long" color="#D3D3D3" iconType="regular">
+Because views are so easy to create and delete, only keep a handful that you regularly rely on. For anything else – a cleanup effort, a one-time export – create the view, use it, then delete it. Like metadata, less is more. Too many views clutter your navigation and slow you down.
+</Callout>
 
-Pending.
+This is one area where I find Notion tends to outshine Obsidian. Notion offers 10 layout types: table, board, timeline, calendar, list, gallery, chart, feed, map, dashboard.
 
-## Learning databases
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  ![database layouts](https://pub-2d2377678ed641f78799466e355c3c0e.r2.dev/database-layouts.png)
+</div>
 
-Resources to help you learn all about databases in the tool of your choice.
+Each layout serves a different purpose. My personal favorite is gallery view – it treats each page almost like an index card, which makes visual browsing feel natural. The variety means you have the right layout available for whatever you're trying to do. If building and using a lot of views is important to you, that's a meaningful point in Notion's favor.
 
-### Notion
+I recommend every database start with one foundational view: all pages, all metadata, sorted by last edited in descending order. Use this as the base to duplicate and modify all other views from.
 
-Pending.
+## A master database template
 
-https://www.notion.com/help/intro-to-databases
+As you learn your preferences, I recommend building a master database template you can duplicate whenever you stand up a new collection. Your standard metadata fields, your default sort, your foundational all-pages view – all of it ready to go. It keeps things consistent and saves you from reinventing the wheel every time.
 
-### Obsidian
+One last thing. As your system matures, you may find yourself wanting to create relationships between databases – linking a book to the author in your people collection, or connecting a project to a specific place. That's a more advanced topic, and I won't go into it here. But a database makes it possible. A folder system doesn't. Trust that organizing into databases now sets you up to expand and scale down the road (should the need arise).
 
-Pending.
+<MyComponent />
 
-https://help.obsidian.md/bases
+## See it in action
+
+Reading about databases is one thing. Interacting with one is another.
+
+This is why each collection in the extended mind system includes both templates and examples – so you can get a feel for how databases actually work before building your own. See the types of pages that live inside a collection, the metadata fields assigned, the views that tend to be most useful. Then download a template, set up your Notion space or Obsidian vault, and go from there.
+
+## Resources
+
+For more information, refer to each tool's documentation:
+
+- [Notion databases](https://www.notion.com/help/intro-to-databases)
+- [Obsidian Bases](https://help.obsidian.md/bases)
 
 ---
 
