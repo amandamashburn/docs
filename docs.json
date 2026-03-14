@@ -101,9 +101,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Amanda Mashburn",
+          "anchor": "About Amanda",
           "href": "https://www.amandamashburn.com",
-          "icon": "house"
+          "icon": "page"
         }
       ]
     }
