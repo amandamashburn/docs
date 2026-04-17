@@ -1,35 +1,34 @@
-🚧 Repository under construction.
+# docs.amandamashburn.com
 
-## An Extended Mind System
+A personal documentation site built with [Mintlify](https://mintlify.com), published at [docs.amandamashburn.com](https://docs.amandamashburn.com).
 
-This repository contains the documentation for my personal extended mind system - a productivity methodology I've developed over years of experimentation and trial and error. If you're familiar with the following books, you'll see their fingerprints throughout:
+## What this repo is
 
-- The Bullet Journal Method by Ryder Carroll
-- Getting Things Done by David Allen
-- The Organized Mind by Daniel Levitin
+This is the source for my public knowledge base — a Mintlify site that documents my personal extended mind system: a methodology for organizing information, managing projects, and building a system that helps you think. It's built on years of daily use and draws on the work of others, including *The Bullet Journal Method*, *Getting Things Done*, and *The Organized Mind*.
 
-I read these works, implemented their systems, and over time adapted them into something distinctly my own.
+The site is live and actively updated. Content is released incrementally as I finish writing and editing each piece.
 
-In the age of AI, externalizing our thoughts is more important than ever - not only as a future artifact to ourselves but also as context for LLMs. Applied AI is integrated throughout the system to demonstrate how it can be used to help build and maintain an extended mind system.
+## Why it's public
 
-**What this is:** Think of this as an opinionated Linux distro for productivity - a fully working system you can use as-is or modify to suit your needs. The methodology itself is tool-agnostic, but I'll be sharing implementations for Notion and Obsidian, complete with working examples and templates. 
+This repo is public for two reasons.
 
-**Why it exists:** After years of tinkering with my own Notion setup and refining what actually works, I decided to document the whole thing as software documentation rather than write a traditional productivity book. This lets me keep it living and updated, show real implementations alongside theory, and give people something practical they can see in action before adopting.
+**As a reference for others.** If you're building your own Mintlify site — especially a personal knowledge base or documentation site — you're welcome to look at how this one is structured. The `docs.json` navigation setup, the MDX page conventions, the frontmatter patterns, the Cloudflare R2 asset hosting, the Claude Code workflow: it's all here if any of it is useful to you. This isn't a template meant to be forked and used directly, but a working example you can learn from.
 
-**What makes this ambitious:** This is a true end-to-end project. I'm building the infrastructure (GitHub, Mintlify, Cloudflare R2 for assets, Claude for coding + editing), writing all the content, creating the sample implementations, and designing the templates. Each use case stands alone but fits into the broader system, released incrementally as I finish documenting them.
+**As a record of the work.** The commit history is an intentional artifact. It shows writing cadence over time — when pages were drafted, revised, and published. The git diff for any file shows how a piece evolved from rough draft to finished page. That kind of history is something a book or a static website doesn't give you, and it felt worth preserving.
 
-## Current Status
-**In active development.** The site has not been officially published yet. I'm currently in the initial building phase - standing up infrastructure, finalizing content, and preparing the first use cases for release. When the site officially launches, the changelog will be updated with the initial release notes.
+## Stack
 
-This is very much a work in progress - a significant undertaking to document years of practical system design. The goal is to create something genuinely useful that people can learn from and adapt to better their own lives, completely free and open.
+- **Framework:** [Mintlify](https://mintlify.com)
+- **Hosting:** Mintlify (site) + Cloudflare R2 (images and assets)
+- **Source:** GitHub
+- **Tooling:** Claude Code for writing assistance, editing, and repo management
 
 ## View the site
 
-https://docs.amandamashburn.com
+[docs.amandamashburn.com](https://docs.amandamashburn.com)
 
 ## License
 
 The source code in this repository is licensed under the MIT License.
 
-All written content, images, and other media are © 2026 Amanda Mashburn.
-They may not be reproduced, distributed, or used without explicit permission.
+All written content, images, and other media are © 2026 Amanda Mashburn. They may not be reproduced, distributed, or used without explicit permission.
