@@ -6,7 +6,7 @@
 |---|---|---|---|
 | Overview | Standalone articles. | Final | pages/index-articles.mdx |
 | Overview | What this change log is, why it exists, and how to use it. | Final | pages/index-change-log.mdx |
-| Overview | A personal methodology for organizing information, managing projects, and building a system that helps you think. | Draft | pages/index-extended-mind-system.mdx |
+| Overview | A personal methodology for organizing information, managing projects, and building a system that helps you think. | Final | pages/index-extended-mind-system.mdx |
 | Overview |  | Final | pages/index-get-started.mdx |
 
 ## Article
@@ -24,10 +24,10 @@
 
 | Title | Description | Status | File |
 |---|---|---|---|
-| A note on Obsidian. | An alternative tool for building an extended mind system. | Placeholder | pages/extended-mind-Obsidian.mdx |
-| ⭐️ The why. | Pending. | Draft | pages/extended-mind-benefits.mdx |
-| Notion database settings | Settings applied to all database templates. | Draft | pages/extended-mind-database-defaults.mdx |
-| Notion databases & metadata | A crash course on databases, metadata, views, and best practices – the foundational concepts behind this system. | Draft | pages/extended-mind-building-blocks.mdx |
+| A note on Obsidian | An alternative tool for building an extended mind system. | Final | pages/extended-mind-Obsidian.mdx |
+| The building blocks of your system | A crash course on how Notion is organized – and how the extended mind system lives inside it. | Final | pages/extended-mind-building-blocks.mdx |
+| Notion database settings | How I configure databases, pages, metadata, and views – and why. | Final | pages/extended-mind-database-defaults.mdx |
+| The case for an extended mind system | What it does for you and why it's worth building. | Final | pages/extended-mind-why.mdx |
 
 ## Collection
 
@@ -37,7 +37,7 @@
 | Core Principles | A personal philosophy database – a collection of guiding statements that inform how you make decisions, prioritize, and live. | Placeholder | pages/collection-core-principles.mdx |
 | Daily Planner & Log | A day-by-day operational database for planning, logging, and reflecting on each 24-hour period. | Placeholder | pages/collection-daily-planner-log.mdx |
 | Knowledge Bank |  | Draft | pages/collection-knowledge-bank.mdx |
-| Life Log | Track life's details in one place – so you can remember, reflect, and leave something behind for those who come after you. | Draft | pages/collection-life-log.mdx |
+| Life Log | Track life's details in one place – so you can remember, reflect, and leave something behind for those who come after you. | Final | pages/collection-life-log.mdx |
 | Opinion Bank | A space for drafting, storing, and developing your own opinions and arguments on topics you care about. | Placeholder | pages/collection-opinion-bank.mdx |
 | People | A personal contacts and relationship database – a modern Rolodex that goes beyond a standard address book. | Placeholder | pages/collection-people.mdx |
 | Places | A personal travel guide and location database – every place you've been, want to go, or want to remember, in one searchable collection. | Placeholder | pages/collection-places.mdx |
@@ -51,8 +51,8 @@
 |---|---|---|---|
 | Best Practices | General principles to keep in mind while reading through use cases and their Notion/Obsidian implementations. | Placeholder | pages/reference-best-practices.mdx |
 | Further reading | Books, thinkers, and ideas that shaped this system. | Final | pages/reference-further-reading.mdx |
-| Life Event Types | A reference guide to what belongs in your life log and details to capture. | Draft | pages/reference-life-events.mdx |
-| Terms & definitions | Terms to familiarize yourself with. | Draft | pages/reference-terms.mdx |
+| Life Event Types | A reference guide to what belongs in your life log and details to capture. | Final | pages/reference-life-events.mdx |
+| Terminology | Terms to familiarize yourself with across the Extended Mind System. | Final | pages/reference-terms.mdx |
 
 ## Other
 
