@@ -56,8 +56,10 @@
             "group": "Get Started",
             "pages": [
               "pages/index-extended-mind-system",
-              "pages/extended-mind-Notion-v-Obsidian",
-              "pages/extended-mind-databases-and-metadata"
+              "pages/extended-mind-why",
+              "pages/extended-mind-Obsidian",
+              "pages/extended-mind-building-blocks",
+              "pages/extended-mind-database-defaults"
             ]
           },
           {
@@ -79,6 +81,7 @@
           {
             "group": "Reference",
             "pages": [
+              "pages/reference-terms",
               "pages/reference-life-events",
               "pages/reference-further-reading"
             ]

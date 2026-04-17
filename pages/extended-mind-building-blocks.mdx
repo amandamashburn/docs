@@ -1,0 +1,226 @@
+---
+title: "The building blocks of your system"
+description: "A crash course on how Notion is organized – and how the extended mind system lives inside it."
+---
+
+import TemplateComponent from '/pages/snippet-template.mdx';
+
+Before you start exploring the collections, it helps to understand how everything fits together. This page covers the organizational structure of the extended mind system – from the top level down to the smallest unit of information – and explains the design decisions behind it.
+
+If you run into an unfamiliar term, see [terminology](/pages/reference-terms) for a full reference guide.
+
+## How it's organized: the house analogy
+
+A simple way to understand the structure is to think of it as a house.
+
+Your *Notion space* is the house itself. It's the whole – everything lives here.
+
+The *databases* are the rooms. Just as a house has a kitchen, a bedroom, and a living room – each with its own purpose – your Notion space has collections organized by the type of information they hold. There's a room for people, a room for books, a room for notes, and so on.
+
+The *pages* are the drawers, cabinets, and storage containers inside each room. Walk into the kitchen and you'll find drawers for utensils, cabinets for dishes, a pantry for dry goods. Each one holds a specific category of things within that room. In your system, each page inside a database holds a specific entry – a person, a book, a note.
+
+And the *blocks* are the individual objects inside those drawers. Open the utensil drawer and there's a spoon, a spatula, a whisk – each a distinct thing you can pick up and use. In Notion, blocks are the individual pieces of content that make up a page: a paragraph of text, an image, a checklist, an embedded link, a table.
+
+Put it together:
+
+- **Notion space** → the house
+- **Database** → a room
+- **Page** → a drawer or cabinet within that room
+- **Block** → an object inside the drawer
+
+That's the full hierarchy. Everything in the extended mind system lives somewhere in that structure.
+
+## Databases and pages in practice
+
+A database is an organized collection of pages – and each page is a full, open-ended container for whatever belongs there.
+
+Think of a page as a folder you never have to close. You might open one for a person you know and drop in their contact details, a note from a conversation, a link to their work, and a photo – all in the same place. Or a page for a book with your notes, highlights, and a rating. The page holds it all.
+
+Pages are not meant to be finished on day one. They're living containers. You create one when something is worth capturing, and you add to it over time as you learn more, encounter more, or simply remember more. A page that starts as a name and a job title might eventually contain years of context. That's the point.
+
+Blocks are what you put inside pages. Every piece of content in Notion is a block – text, images, checkboxes, headers, embeds, tables, code snippets, and more. You build a page by stacking and arranging blocks. This makes pages flexible by design: there's no fixed template, no required format. A page can be a single line of text or a multi-section document. Whatever the content calls for.
+
+
+
+## Why databases instead of folders?
+
+A foundational decision in this system is that pages are organized into databases, not folders – allow me to explain.
+
+A common default is to organize digital files the way you'd organize physical ones: into folders and subfolders. This method is a relic of the physical world, where an object can only be in one place at a time. A document goes in one folder in a file cabinet. A recipe goes in one section of a binder.
+
+Computers freed us from that constraint decades ago. The problem is that most people never updated their mental model, so they kept organizing digitally the way they organized physically. To be fair, databases weren't always accessible to everyday users – but tools like Notion changed that. Now anyone can use them. And once you do, you'll wonder how you managed without them.
+
+Here's why I advocate for databases so heavily. It comes down to two things:
+
+1. The ability to assign and manage metadata for every page.
+2. The ability to create different views based on that metadata – **letting you zoom in and out, filter, and slice a collection however you need to.**
+
+
+
+## The recipe example
+
+Say you have a collection of 100 recipes you'd like to organize digitally. Your instinct might be to throw them into a "recipes" folder, or maybe create subfolders for categories like appetizers, salads, entrees, soups, and desserts.
+
+That works – to a point.
+
+Entrée type is just one attribute of a recipe. What about all the others? You could also describe a recipe by:
+
+- main ingredient
+- cooking time
+- skill level
+- season
+- equipment required
+- where you discovered it (family recipe, cooking magazine, supper club)
+- recipes you've made vs. ones you want to try
+
+With a folder system, you have to pick one organizing principle. Beef stew goes in "entrees." That's it. If you later want to find all your family recipes, pull together dishes that use spring ingredients, or view holidays meals, you have no good way to do that.
+
+Now imagine a database of those same 100 recipes. Each recipe is still a page – with the full recipe, your notes, maybe a photo of how it turned out, a link to a video tutorial. But now each page also has metadata attached: meal type, main ingredient, cooking time, skill level, season, source, and whether you've attempted it.
+
+**Think of it like writing each recipe and its attributes on an index card.** With every card filled out, you can spread them on a table and sort however you like – pull all the chicken dishes, flip to the ones you haven't tried, set aside everything that takes under 30 minutes. You're organizing based on what you need at that moment.
+
+That's exactly what a database view is. With metadata in place, you can build views: one grouped by meal type, one filtered to spring dishes, one for everything you reach for at Thanksgiving. You're not reorganizing anything – the pages live in the same place. You're just looking at them through a different lens.
+
+And here's where tags come in. Some categories don't need their own dedicated field – they're too specific or too occasional to justify it. That's what tags are for. You might tag a recipe "dinner party" for dishes you pull out when you're hosting, or "quick weeknight" for ones you can make in 30 minutes. Those aren't fields you need permanently – they're labels that let you surface a specific subset when the moment calls for it.
+
+This is the core benefit of a database: **one collection, many ways to look at it.**
+
+One last thing. As your system matures, you may want to create relationships between databases – linking a book to the author in your people collection, or connecting a project to a specific place. That's a more advanced topic, and I won't go into it here. But a database makes it possible. A folder system doesn't. Organizing into databases now sets you up to scale later, should the need arise.
+
+
+
+## Notion database example
+
+![notion-db-layout](https://pub-2d2377678ed641f78799466e355c3c0e.r2.dev/notion-db-layout.png)
+*Fig. 01 – A Notion database in table view. The page name appears in the first column; metadata fields appear in the columns that follow. You can open any page directly from within the database. Inside the page, you'll see that page's metadata at the top, followed by the content itself.*
+
+## Metadata
+
+Metadata is data about data. It's the structured information attached to each page that describes it – so you can find it, sort it, filter it, and build views around it.
+
+Every database in this system starts with a core set of metadata fields. As you move through the collections, you'll see these everywhere. They're the foundation – and each collection adds whatever additional fields it needs on top.
+
+Each field description includes a maintenance note indicating whether it's maintained automatically by Notion, generated by AI, or updated manually by you.
+
+### Metadata field: created on
+
+*Maintenance: Auto-update*
+
+The created on date tells you when a page first entered your system – when you had an idea, encountered a topic, or decided something was worth capturing.
+
+This field gets more valuable over time. After a year or two, you'll start to see patterns: clusters of pages around certain themes, long stretches of activity in one area, spikes that map to specific periods in your life. It becomes a record of where your attention was – and when.
+
+If you ever export a database to CSV, this is a great field to graph. The calendar view in Notion gives you a similar picture inside the tool itself.
+
+### Metadata field: last edited
+
+*Maintenance: Auto-update*
+
+Last edited tells you which pages you've touched most recently. Compared against the created on date, it also tells you something about a page's longevity – whether something you captured years ago is still actively in use, or has sat untouched since the day you created it.
+
+I sort most of my databases by last edited date in descending order by default. Whatever I've touched most recently sits at the top. It's a natural way to surface where your current focus is.
+
+### Metadata field: tag(s)
+
+*Maintenance: AI-generated and / or manual update*
+
+Tags are the workhorse of metadata – and a good place to layer AI into your workflow.
+
+When you're starting out, you often don't know yet what categories you'll actually need. Tags let you assign labels freely without committing to a formal field structure. Over time, if you find yourself assigning the same type of tag to almost every page in a collection, that's a signal it might be worth promoting to its own dedicated field. Until that pattern is clear, tags are sufficient.
+
+Tags are also useful for edge cases – labels that apply to a handful of pages but not the rest of the collection. You get to capture the category without bloating your metadata fields.
+
+And tags reveal cross-collection themes. In my own system, I noticed I was collecting pages related to subtraction and domestic science across my knowledge bank, books, quotes, and general notes – all in separate collections. By tagging those pages consistently, I can build a single view that pulls all of them together, regardless of which collection they live in.
+
+Finally – tags and AI work well together. My workflow: I have AI review the page content, the collection context, and my existing tags, then propose relevant labels. I review the suggestions, keep what fits, adjust what doesn't. It reduces the cognitive load of categorization while making sure I'm not missing an applicable label I would have otherwise overlooked.
+
+To recap:
+- Use tags to guide you toward the attributes that actually matter across a collection.
+- Use tags for edge cases that don't warrant their own field.
+- Use tags to surface themes across collections.
+- Let AI suggest them, then refine.
+
+## Database views
+
+All that metadata you've been assigning? This is what it's for.
+
+A view is a filtered, sorted, or grouped window into your database. It doesn't move or alter your pages – it simply surfaces a specific subset based on constraints you define.
+
+For a life log, you might create a view that shows only long-form journal entries. For your knowledge bank, a view filtered to a particular theme. For your projects, a view showing only what's actively in progress. Same underlying collection each time – different lens.
+
+Notion offers 10 layout types: table, board, timeline, calendar, list, gallery, chart, feed, map, and dashboard. Each serves a different purpose. My personal favorite is gallery view – it treats each page like an index card, which makes visual browsing feel natural.
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  ![database layouts](https://pub-2d2377678ed641f78799466e355c3c0e.r2.dev/database-layouts.png)
+</div>
+
+*Fig. 02 – The available layout types for creating views in Notion.*
+
+![gallery-view](https://pub-2d2377678ed641f78799466e355c3c0e.r2.dev/databases-and-metadata-1.png)
+
+*Fig. 03 – A gallery view – the same underlying collection as Fig. 01, displayed as a grid of index cards.*
+
+I recommend every database start with one foundational table view: all pages, all metadata, sorted by last edited in descending order. A full picture of the collection, always one click away.
+
+Each collection template on this site includes the views I find most useful for that particular database.
+
+
+## A master database template
+
+As you get comfortable with your configuration preferences, I recommend building a master database template you can duplicate whenever you stand up a new collection. Your standard metadata fields, your default sort, your foundational all-pages view – all of it ready to go. It keeps things consistent and saves you from reinventing the wheel every time.
+
+See my preferred [database settings](/pages/extended-mind-database-defaults) for what that looks like in practice.
+
+## Database best practices
+
+You'll see these principles implemented throughout the extended mind system.
+
+### Organize by information type
+
+The collections in this system are organized around information types: people, books, notes, life events, knowledge articles, and so on. The reason is straightforward: when all pages in a collection share the same type, you can design metadata fields and page templates that actually fit every entry. A database mixing recipes and contacts would need fields that serve neither well. Grouping by type keeps the structure meaningful and the maintenance manageable.
+
+### Start wide, not narrow
+
+Resist the urge to create narrow categories out of the gate. Use one life log bucket instead of separate databases for journal entries, medical notes, home maintenance, and quarterly reviews. Let a single general notes database hold bible verses and quotes until you've collected enough of either to warrant their own home – which is exactly how my quotes collection came to exist, and later my X posts collection after that.
+
+Collections earn their independence. They don't start with it.
+
+### Keep a miscellaneous database
+
+Sometimes you end up with an oddball page that doesn't fit anywhere in your existing collections. Keep a miscellaneous database for these – the junk drawer of your Notion space. Every house has one, and your digital home should too. In time, you may notice a cluster of similar pages (for me, a handful of family history pages eventually found each other this way) or the page remains a one-off. Either outcome is fine.
+
+### Less is more when it comes to metadata
+
+A common misstep when setting up databases is creating too many metadata fields upfront – which is busywork disguised as productivity. Metadata is only useful if it's maintained. The more fields you introduce, the more ongoing admin work you're creating for yourself, and that's how you end up spending more time maintaining your system than actually using it.
+
+Start with the standard fields you'll find in each collection template. If you keep bumping into a situation where you can't build a view you want, that's your signal that a new field might be useful. Add it then. Not before.
+
+### Use temporary views
+
+Views are easy to create and easy to delete – use that to your advantage. Keep only the handful of views you rely on regularly. For anything else – a one-time cleanup, a quick export – create the view, use it, delete it. Too many views clutter your navigation and slow you down. Less is more here too.
+
+### Leverage placeholder pages
+
+Sometimes you have an idea for a page – a project to plan, a topic to research, an experience to reflect on – but you don't have time to sit down with it right now. Create the page anyway, and put TODO at the front of the title. It becomes a container for the thought and a reminder to return to it. In Notion, you can search for TODO and pull up every one of these pages in a list.
+
+### Treat databases and pages as living things
+
+A database or page doesn't need to be fully built out on day one. Let it grow. If you come across a piece of information worth saving, add it to the right page. If the page doesn't exist yet, create it. If the right database doesn't exist yet, drop it in miscellaneous until a pattern emerges – then migrate.
+
+### Leverage page templates
+
+Notion lets you create templates within a database – a pre-built page structure you can apply whenever you add a new entry. Use this to keep pages consistent and cut down on repetitive setup. If you want certain fields filled in or content organized a certain way across every page in a collection, a template enforces that standard without any extra effort on your part.
+
+## See it in action
+
+Reading about databases is one thing. Interacting with one is another.
+
+This is why each collection on this site includes both an interactive example and a template – so you can get a feel for how databases actually work before building your own. You'll see the types of pages that live inside a collection, the metadata fields assigned, and the views that tend to be most useful.
+
+<TemplateComponent />
+
+---
+
+Last update: 2026.04.17
+
+---
