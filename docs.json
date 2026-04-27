@@ -38,9 +38,14 @@
         "tab": "Articles",
         "groups": [
           {
+            "group": "Get Started",
+            "pages": [
+              "pages/index-articles"
+            ]
+          },
+          {
             "group": "Articles",
             "pages": [
-              "pages/index-articles",
               "pages/article-infrastructure",
               "pages/article-share-knowledge",
               "pages/article-DE-SC-26-016",
@@ -92,9 +97,14 @@
         "tab": "Change Log",
         "groups": [
           {
+            "group": "Get Started",
+            "pages": [
+              "pages/index-change-log"
+            ]
+          },
+          {
             "group": "Change Log",
             "pages": [
-              "pages/index-change-log",
               "pages/change-log"
             ]
           }
@@ -104,9 +114,19 @@
     "global": {
       "anchors": [
         {
-          "anchor": "About Amanda",
+          "anchor": "amandamashburn.com",
           "href": "https://www.amandamashburn.com",
-          "icon": "page"
+          "icon": "arrow-up-right-from-square"
+        },
+        {
+          "anchor": "Notion Templates",
+          "href": "https://amandamashburn.notion.site/extended-mind-system",
+          "icon": "arrow-up-right-from-square"
+        },
+        {
+          "anchor": "ISO 8601 Calendar",
+          "href": "https://www.amandamashburn.com/calendar",
+          "icon": "arrow-up-right-from-square"
         }
       ]
     }
