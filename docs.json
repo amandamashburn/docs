@@ -62,24 +62,37 @@
             "pages": [
               "pages/index-extended-mind-system",
               "pages/extended-mind-why",
-              "pages/extended-mind-Obsidian",
+              "pages/extended-mind-Obsidian"
+            ]
+          },
+          {
+            "group": "The Tool: Notion",
+            "pages": [
               "pages/extended-mind-building-blocks",
               "pages/extended-mind-database-defaults"
             ]
           },
           {
-            "group": "Collections",
+            "group": "Operations Collections",
+            "pages": [
+              "pages/reference-projects-and-routines",
+              "pages/reference-resources",
+              "pages/collection-priorities",
+              "pages/collection-routines",
+              "pages/collection-projects",
+              "pages/collection-daily-planner-log"
+            ]
+          },
+          {
+            "group": "Reference Collections",
             "pages": [
               "pages/collection-books-and-papers",
               "pages/collection-core-principles",
-              "pages/collection-daily-planner-log",
               "pages/collection-knowledge-bank",
               "pages/collection-life-log",
               "pages/collection-opinion-bank",
               "pages/collection-people",
               "pages/collection-places",
-              "pages/collection-projects",
-              "pages/collection-routines",
               "pages/collection-things"
             ]
           },
@@ -87,8 +100,6 @@
             "group": "Reference",
             "pages": [
               "pages/reference-terms",
-              "pages/reference-resources",
-              "pages/reference-project-v-routine",
               "pages/reference-life-events",
               "pages/reference-further-reading"
             ]
