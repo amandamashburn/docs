@@ -23,18 +23,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Get Started",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "pages/index-get-started",
-              "pages/license"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "Articles",
         "groups": [
           {
@@ -43,56 +31,18 @@
               "pages/index-articles",
               "pages/article-infrastructure",
               "pages/article-share-knowledge",
-              "pages/article-DE-SC-26-016",
-              "pages/article-linkedin"
+              "pages/article-DE-SC-26-016"
             ]
           }
         ]
       },
       {
-        "tab": "An Extended Mind System",
+        "tab": "Life Management",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Life Management",
             "pages": [
-              "pages/index-extended-mind-system",
-              "pages/extended-mind-Notion-v-Obsidian",
-              "pages/extended-mind-databases-and-metadata"
-            ]
-          },
-          {
-            "group": "Collections",
-            "pages": [
-              "pages/collection-books-and-papers",
-              "pages/collection-core-principles",
-              "pages/collection-daily-planner-log",
-              "pages/collection-knowledge-bank",
-              "pages/collection-life-log",
-              "pages/collection-opinion-bank",
-              "pages/collection-people",
-              "pages/collection-places",
-              "pages/collection-projects",
-              "pages/collection-routines",
-              "pages/collection-things"
-            ]
-          },
-          {
-            "group": "Reference",
-            "pages": [
-              "pages/reference-life-events",
-              "pages/reference-further-reading"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Change Log",
-        "groups": [
-          {
-            "group": "Change Log",
-            "pages": [
-              "pages/index-change-log",
-              "pages/change-log"
+              "pages/index-life-management"
             ]
           }
         ]
@@ -123,8 +73,10 @@
   },
   "footer": {
     "socials": {
+      "instagram": "https://www.instagram.com/amandamashburn_",
       "x": "https://x.com/AmandaMashburn",
       "github": "https://github.com/amandamashburn"
+      
     }
   },
   "seo": {
