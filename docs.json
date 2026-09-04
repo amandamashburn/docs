@@ -17,7 +17,7 @@
   },
   "favicon": "/assets/favicon.svg",
   "banner": {
-    "content": "Work in progress. See Change Log for updates.",
+    "content": "UNDER CONSTRUCTION",
     "dismissible": false
   },
   "navigation": {
@@ -28,21 +28,7 @@
           {
             "group": "Articles",
             "pages": [
-              "pages/index-articles",
-              "pages/article-infrastructure",
-              "pages/article-share-knowledge",
-              "pages/article-DE-SC-26-016"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Life Management",
-        "groups": [
-          {
-            "group": "Life Management",
-            "pages": [
-              "pages/index-life-management"
+              "pages/index-articles"
             ]
           }
         ]
